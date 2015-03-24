@@ -1,0 +1,20 @@
+{
+  "name": "eslint-myrules",
+  "version": "1.0.0",
+  "description": "ESlint rules for AuctionEx",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "index.js",
+  "scripts": {},
+  "author": "Michael Ferris",
+  "dependencies": {
+    "babel-eslint": "^2.0.2",
+    "eslint-plugin-react": "^1.5.0",
+    "eslint-plugin-shadow-exception": "^1.1.0"
+  },
+  "peerDependencies": {
+    "eslint-myrules-manager": "^0.1.0"
+  }
+}

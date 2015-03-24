@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "__PROD__": false,
+  },
+  "rules": {
+    // By default rules for React are added here. See modifier react
+
+    // Confirmed that UglifyJS drops trailling comma
+    //"comma-dangle": [2, "never"]
+  }
+}

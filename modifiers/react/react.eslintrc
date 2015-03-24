@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    // Rules for React components
+
+    // Allow to have more than 1 component per file, left at the discretion of
+    // the developper
+    "react/no-multi-comp": 0,
+    "react/prop-types": 1,
+    // JSX takes care of that
+    "react/display-name": 0,
+    "react/wrap-multilines": 1,
+    "react/self-closing-comp": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/react-in-jsx-scope": 1,
+  }
+}
