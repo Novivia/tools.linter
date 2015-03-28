@@ -25,7 +25,7 @@
     // First number is error level 0: ignore, 1: warning, 2: error
     // Second is option ie: [1, "double"] = Warn using double option
     // Code style
-    "camelcase": 1,
+    "camelcase": [1, {"properties": "never"}],
     "curly": [2, "all"],
     "indent": [2, 2],
     "max-len": [1, 80],
@@ -37,7 +37,7 @@
     "quotes": [2, "double"],
     "wrap-iife": [2, "outside"],
     "yoda": [2, "never", { "exceptRange": true }],
-    "space-infix-ops": 2,
+    "space-infix-ops": [2, {"int32Hint": false}],
     "no-new": 1,
     // Allow multi spaces for variable declaration (alignement)
     "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true } }],
@@ -48,6 +48,7 @@
     "consistent-return": 0,
     "no-mixed-requires": 0,
     "no-underscore-dangle": 0,
+    "no-param-reassign": 0,
     "strict": 0
   }
 }
