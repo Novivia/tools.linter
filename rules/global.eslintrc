@@ -37,7 +37,7 @@
     "quotes": [2, "double"],
     "wrap-iife": [2, "outside"],
     "yoda": [2, "never", { "exceptRange": true }],
-    "space-infix-ops": [2, {"int32Hint": false}],
+    "space-infix-ops": 2,
     "no-new": 1,
     // Allow multi spaces for variable declaration (alignement)
     "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true } }],
@@ -48,7 +48,6 @@
     "consistent-return": 0,
     "no-mixed-requires": 0,
     "no-underscore-dangle": 0,
-    "no-param-reassign": 0,
     "strict": 0
   }
 }
