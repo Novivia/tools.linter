@@ -18,5 +18,11 @@
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/react-in-jsx-scope": 1,
+    "react/jsx-quotes": [1, "double", "avoid-escape"],
+    "react/jsx-no-undef": 1,
+    "react/no-unknown-property": 1,
+
+    // Allow nested ternary for JSX components
+    "no-nested-ternary": 0,
   }
 }

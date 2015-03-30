@@ -11,7 +11,7 @@
   "author": "Michael Ferris",
   "dependencies": {
     "babel-eslint": "^2.0.2",
-    "eslint-plugin-react": "^1.5.0",
+    "eslint-plugin-react": "^2.0.1",
     "eslint-plugin-shadow-exception": "^1.1.0"
   },
   "peerDependencies": {
