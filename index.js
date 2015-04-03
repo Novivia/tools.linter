@@ -7,12 +7,17 @@ module.exports = {
   },
   modifiers: {
     frontend: {
-      react: require("./modifiers/react")
+      react: require("./modifiers/react"),
+      "no-code-style": require("./modifiers/code_style"),
+    },
+    global: {
+      "no-code-style": require("./modifiers/code_style"),
     }
   },
   defaultConfig: {
     modifiers: {
-      react: true
+      react: true,
+      "no-code-style": false
     }
   }
 };
