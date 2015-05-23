@@ -16,7 +16,7 @@
     "babel-eslint": "^3.0.1",
     "eslint": "^0.21.0",
     "eslint-myrules-manager": "^0.2.2",
-    "eslint-plugin-react": "^2.1.0",
+    "eslint-plugin-react": "^2.3.0",
     "eslint-plugin-shadow-exception": "^1.1.0"
   }
 }
