@@ -57,6 +57,7 @@
     "curly": [2, "all"],
     "indent": [2, 2],
     "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true } }], // Allow multi spaces for variable declaration (alignement)
+    "no-unneeded-ternary": 2,
     "quotes": [2, "double"],
 
     // Rules to help finding possible errors
