@@ -55,7 +55,6 @@
     "camelcase": [1, {"properties": "never"}],
     "consistent-this": [0, "self"],
     "curly": [2, "all"],
-    "dot-location": [2, "property"],
     "indent": [2, 2],
     "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true } }], // Allow multi spaces for variable declaration (alignement)
     "no-unneeded-ternary": 2,
