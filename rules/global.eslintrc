@@ -6,7 +6,8 @@
   "globals": {
   },
   "plugins": [
-    "shadow-exception"
+    "shadow-exception",
+    "babel"
   ],
   "rules": {
     "shadow-exception/no-shadow": [2, {
@@ -20,6 +21,8 @@
         "response": true
       }
     }],
+    "new-cap": 0,
+    "babel/new-cap": 2,
     "no-shadow": 0,
 
     // First number is error level 0: ignore, 1: warning, 2: error

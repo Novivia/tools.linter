@@ -5,7 +5,31 @@
     "node": true
   },
   "globals": {},
-  "plugins": ["shadow-exception"],
+  "plugins": ["shadow-exception", "babel"],
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "jsx": true
+  },
   "rules": {
     "shadow-exception/no-shadow": [2, {
       "exceptions": {
@@ -18,6 +42,8 @@
         "response": true
       }
     }],
+    "new-cap": 0,
+    "babel/new-cap": 2,
     "no-shadow": 0,
     "camelcase": [1, {
       "properties": "never"
@@ -62,20 +88,13 @@
     "no-mixed-requires": 0,
     "no-underscore-dangle": 0,
     "strict": 0,
-    "array-bracket-spacing": [2, "never"],
     "block-scoped-var": 2,
     "brace-style": [2, "1tbs", {
       "allowSingleLine": true
     }],
     "comma-style": [2, "last"],
-    "computed-property-spacing": [2, "never"],
     "dot-location": [2, "property"],
-    "lines-around-comment": [2, {
-      "beforeBlockComment": true,
-      "beforeLineComment": true,
-      "allowBlockStart": true,
-      "allowBlockEnd": true
-    }],
+    "generator-star-spacing": [2, "after"],
     "max-len": [1, 80],
     "no-floating-decimal": 2,
     "no-inline-comments": 2,
@@ -85,15 +104,12 @@
     }],
     "no-nested-ternary": 2,
     "no-spaced-func": 2,
-    "object-curly-spacing": [2, "never"],
     "operator-linebreak": 2,
     "padded-blocks": [2, "never"],
     "space-before-blocks": [2, "always"],
     "space-in-brackets": [2, "never"],
     "space-in-parens": [2, "never"],
     "space-infix-ops": 2,
-    "spaced-comment": [2, "always", {
-      "markers": ["/"]
-    }]
+    "spaced-line-comment": [2, "always"]
   }
 }
