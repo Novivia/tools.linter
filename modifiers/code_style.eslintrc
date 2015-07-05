@@ -7,7 +7,7 @@
     "computed-property-spacing": [2, "never"],
     "dot-location": [2, "property"],
     // Activate when https://github.com/eslint/eslint/pull/2893 is published, probably next version of eslint
-    //"lines-around-comment": [2, {beforeBlockComment: true, beforeLineComment: true, allowBlockStart: true, allowBlockEnd: true}],
+    //"lines-around-comment": [2, {beforeBlockComment: true, beforeLineComment: true, allowBlockStart: true}],
     "max-len": [1, 80],
     "no-floating-decimal": 2,
     "no-inline-comments": 2,
