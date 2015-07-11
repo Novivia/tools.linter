@@ -15,7 +15,7 @@ $ npm install git+ssh://git.novivia.com/auex/tools.rules --save-dev
 
 ## Details
 
-- Targets: `global`, `frontend` and `backend`
+- Targets: `global` and `frontend`
 - Modifiers: see [modifiers](modifiers/README.md)
 - Uses [babel-eslint](https://github.com/babel/babel-eslint) for parsing.
 - Optionnal plugin for [react](https://github.com/yannickcr/eslint-plugin-react)

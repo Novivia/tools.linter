@@ -1,0 +1,35 @@
+{
+  rules: {
+    "constructor-super": 2,
+    "generator-star-spacing": [2, "after"],
+    "no-this-before-super": 2,
+    "no-var": 2,
+    "prefer-const": 2,
+  },
+  "ecmaFeatures": {
+    // The features are not used when using babel-eslint, however, if the parser
+    // is disabled, we would like to keep es6 features
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "restParams": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true
+  },
+}
