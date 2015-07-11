@@ -29,13 +29,36 @@
     "react/self-closing-comp": 1,
     "react/sort-comp": [1, {
       order: [
+        "definition",
         "lifecycle",
-        "state",
         "/^on.+$/",
         "everything-else",
         "rendering",
       ],
       groups: {
+        definition: [
+          "displayName",
+          "propTypes",
+          "contextTypes",
+          "childContextTypes",
+          "mixins",
+          "statics",
+          "defaultProps",
+          "state",
+          "constructor",
+        ],
+        lifecycle: [
+          "getDefaultProps",
+          "getInitialState",
+          "getChildContext",
+          "componentWillMount",
+          "componentDidMount",
+          "componentWillReceiveProps",
+          "shouldComponentUpdate",
+          "componentWillUpdate",
+          "componentDidUpdate",
+          "componentWillUnmount"
+        ],
         rendering: [
           "/^render.+$/",
           "render"
