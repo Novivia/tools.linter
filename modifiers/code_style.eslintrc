@@ -18,11 +18,10 @@
     "no-multiple-empty-lines": [2, {"max": 2}],
     "no-nested-ternary": 2,
     "no-spaced-func": 2,
-    "object-curly-spacing": [2, "never"],
+    "babel/object-curly-spacing": [2, "never"],
     "operator-linebreak": 2,
     "padded-blocks": [2, "never"],
     "space-before-blocks": [2, "always"],
-    "babel/space-in-brackets": [2, "never"],
     "space-in-parens": [2, "never"],
     "space-infix-ops": 2,
     "spaced-comment": [2, "always", {exceptions: ["/"]}]
