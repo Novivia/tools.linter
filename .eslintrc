@@ -69,6 +69,9 @@
     "strict": 0,
     "array-bracket-spacing": [2, "never"],
     "babel/block-scoped-var": 2,
+    "brace-style": [2, "1tbs", {
+      "allowSingleLine": true
+    }],
     "comma-style": [2, "last"],
     "computed-property-spacing": [2, "never"],
     "dot-location": [2, "property"],
