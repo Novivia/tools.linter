@@ -1,22 +1,5 @@
 #!/usr/bin/env node
-var eslintManager = require("eslint-myrules-manager");
-var eslintManagerConfig = require("eslint-myrules-manager/lib/config");
+var execute = require("eslint-myrules-manager").execute;
 var myRules = require("./index");
 
-// var formatterPath;
-
-// if (~process.argv.indexOf("stats")) {
-//   formatterPath = require.resolve("eslint-stats").slice(0, -9) + "/byErrorAndWarningStacked.js";
-
-//   // FIXME: Huge unreliable hack, find better.
-//   delete process.argv[process.argv.indexOf("stats")];
-//   process.argv.length -= 1;
-// } else {
-//   formatterPath = require.resolve("eslint-friendly-formatter");
-// }
-
-// myRules.eslintOptions = (
-//   "--format " + formatterPath + " " + eslintManagerConfig.eslintOptions
-// );
-
-eslintManager.execute(myRules, process.argv);
+execute(myRules, process.argv);
