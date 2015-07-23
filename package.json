@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "ESlint rules for AuctionEx",
   "author": "Michael Ferris",
+  "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
     "url": "git+ssh://git.novivia.com/auex/tools.rules"
