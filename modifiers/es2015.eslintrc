@@ -1,7 +1,12 @@
 {
+  plugins: [
+    "babel"
+  ],
   rules: {
     "constructor-super": 2,
     "babel/generator-star-spacing": [2, "after"],
+    "new-cap": 0,
+    "babel/new-cap": 2,
     "no-this-before-super": 2,
     "no-var": 2,
     "prefer-const": 2,

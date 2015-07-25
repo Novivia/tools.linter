@@ -6,8 +6,7 @@
   "globals": {
   },
   "plugins": [
-    "shadow-exception",
-    "babel"
+    "shadow-exception"
   ],
   "rules": {
     "shadow-exception/no-shadow": [2, {
@@ -21,8 +20,6 @@
         "response": true
       }
     }],
-    "new-cap": 0,
-    "babel/new-cap": 2,
     "no-shadow": 0,
 
     // First number is error level 0: ignore, 1: warning, 2: error
@@ -38,7 +35,6 @@
     "quotes": [2, "double"],
 
     // Rules to help finding possible errors
-    "constructor-super": 2,
     "guard-for-in": 2,
     "max-depth": [1, 15],
     "max-nested-callbacks": [1, 5],
@@ -49,7 +45,6 @@
     "no-lonely-if": 2,
     "no-new": 1,
     "no-self-compare": 2,
-    "no-this-before-super": 2,
     "no-throw-literal": 2,
     "no-unexpected-multiline": 2,
     "no-unused-vars": [2, {"args": "after-used"}],

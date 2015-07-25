@@ -1,4 +1,7 @@
 {
+  plugins: [
+    "babel"
+  ],
   rules: {
     "array-bracket-spacing": [2, "never"],
     "babel/block-scoped-var": 2,
