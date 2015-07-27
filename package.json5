@@ -16,7 +16,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "build-module build -p 'modifiers/**' -p 'rules/**'",
+    "build": "build-module build -p 'modifiers/**' -p 'rules/**' -p cliWrapper",
     "lint": "node cliWrapper lint .",
     "pub": "build-module publish",
     "release": "build-module release",
