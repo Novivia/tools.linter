@@ -1,6 +1,10 @@
 {
-  "name": "auex-eslint-myrules",
+  "name": "@auex/eslint-myrules",
+  "role": "linter",
   "version": "0.1.1",
+  "publishConfig": {
+    "registry": "https://npm.novivia.com"
+  },
   "description": "ESlint rules for AuctionEx",
   "author": "Michael Ferris",
   "repository": {
@@ -12,20 +16,28 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "node cliWrapper lint ."
+    "build": "build-module build -p 'modifiers/**' -p 'rules/**'",
+    "lint": "node cliWrapper lint .",
+    "pub": "build-module publish",
+    "release": "build-module release",
   },
   "eslint-myrules": {
     "modifiers": {
       "react": false,
-      "es2015": false
+      "es2015": false,
     }
   },
+  "devDependencies": {
+    // AuctionEx dependencies.
+    "@auex/build-module": "^0.1.0",
+  },
   "dependencies": {
+    // npm dependencies.
     "babel-eslint": "^3.1.23",
     "eslint": "^0.24.0",
     "eslint-myrules-manager": "^0.2.2",
     "eslint-plugin-babel": "^1.2.0",
     "eslint-plugin-react": "^3.0.0",
-    "eslint-plugin-shadow-exception": "^1.1.1"
+    "eslint-plugin-shadow-exception": "^1.1.1",
   }
 }
