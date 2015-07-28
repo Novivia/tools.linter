@@ -11,6 +11,8 @@
     // JSX takes care of that
     "react/display-name": [1, {"acceptTranspilerName": true}],
     "react/jsx-boolean-value": 1,
+    "react/jsx-curly-spacing": 1,
+    "react/jsx-no-duplicate-props": 1,
     "react/jsx-no-undef": 1,
     "react/jsx-quotes": [1, "double", "avoid-escape"],
     "react/jsx-sort-prop-types": [1, {"ignoreCase": true}],

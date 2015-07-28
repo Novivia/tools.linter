@@ -46,6 +46,7 @@
     "no-new": 1,
     "no-self-compare": 2,
     "no-throw-literal": 2,
+    "no-unexpected-multiline": 2,
     "no-unused-vars": [2, {"args": "after-used"}],
     "no-use-before-define": [2, "nofunc"],
     "valid-jsdoc": [2, {"prefer": {"returns": "return"}, "requireReturn": false}],

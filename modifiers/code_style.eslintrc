@@ -1,15 +1,18 @@
 {
+  plugins: [
+    "babel"
+  ],
   rules: {
     "array-bracket-spacing": [2, "never"],
-    "block-scoped-var": 2,
+    "babel/block-scoped-var": 2,
     "brace-style": [2, "1tbs", {"allowSingleLine": true}],
     "comma-style": [2, "last"],
     "computed-property-spacing": [2, "never"],
     "dot-location": [2, "property"],
     "lines-around-comment": [2, {
-        beforeBlockComment: true,
-        beforeLineComment: true,
-        allowBlockStart: true
+        "allowBlockStart": true,
+        "beforeBlockComment": true,
+        "beforeLineComment": true
     }],
     "max-len": [1, 80],
     "no-floating-decimal": 2,
@@ -18,11 +21,10 @@
     "no-multiple-empty-lines": [2, {"max": 2}],
     "no-nested-ternary": 2,
     "no-spaced-func": 2,
-    "object-curly-spacing": [2, "never"],
+    "babel/object-curly-spacing": [2, "never"],
     "operator-linebreak": 2,
     "padded-blocks": [2, "never"],
     "space-before-blocks": [2, "always"],
-    "space-in-brackets": [2, "never"],
     "space-in-parens": [2, "never"],
     "space-infix-ops": 2,
     "spaced-comment": [2, "always", {exceptions: ["/"]}],
