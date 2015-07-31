@@ -32,3 +32,4 @@ bower_components
 
 # Distribution files
 /*.sublime-workspace
+*.tar.gz
