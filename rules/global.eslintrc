@@ -1,5 +1,8 @@
 {
   "parser": "babel-eslint",
+
+  // FIXME: Remove once migration is complete.
+  "extends": "eslint:recommended",
   "env": {
     "node": true
   },
@@ -29,12 +32,15 @@
     "camelcase": [1, {"properties": "never"}],
     "consistent-this": [0, "self"],
     "curly": [2, "all"],
-    "indent": [2, 2],
+    "indent": [2, 2, {"SwitchCase": 1, "VariableDeclarator": 2}],
     "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true } }], // Allow multi spaces for variable declaration (alignement)
     "no-unneeded-ternary": 2,
+    "no-useless-call": 2,
     "quotes": [2, "double"],
+    "id-length": [2, {"min": 4, "max": 40, "exceptions": ["cb", "e", "err"]}],
 
     // Rules to help finding possible errors
+    "callback-return": 2,
     "guard-for-in": 2,
     "max-depth": [1, 15],
     "max-nested-callbacks": [1, 5],
