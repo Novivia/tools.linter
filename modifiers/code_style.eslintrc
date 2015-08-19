@@ -4,6 +4,7 @@
   ],
   "rules": {
     "array-bracket-spacing": [2, "never"],
+    "block-spacing": [2, "never"],
     "brace-style": [2, "1tbs", {"allowSingleLine": true}],
     "comma-style": [2, "last"],
     "computed-property-spacing": [2, "never"],
