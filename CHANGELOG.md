@@ -1,6 +1,6 @@
 # Versions
 
-## v0.3.0 - (11/08/2015)
+## v0.3.0 - (19/08/2015)
 
 * Modified rules:
     * Now ignoring URLs in the `max-len` rule.
