@@ -12,12 +12,14 @@ module.exports = {
     react: modifiers.react,
   },
   defaultConfig: {
-    frontend: {
-      react: true,
+    modifiers: {
+      frontend: {
+        react: true,
+      },
+      global: {
+        "no-code-style": false,
+        es2015: true,
+      }
     },
-    global: {
-      "no-code-style": false,
-      es2015: true
-    }
   }
 };
