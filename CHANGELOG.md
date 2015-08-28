@@ -13,6 +13,15 @@
     * Now suggesting to use template literals instead of strings concatenation.
       (`prefer-template `)
 
+* New React rules:
+    * Now enforcing the closing bracket location for JSX multiline elements.
+      (`jsx-closing-bracket-locatioǹ)
+    * Now validating a specific indentation style for props.
+      (`jsx-indent-props̀)
+
+* Updated dependency:
+    * `eslint-myrules-manager` to v0.4 and adjusted configuration accordingly.
+
 
 ## v0.3.0 - (19/08/2015)
 

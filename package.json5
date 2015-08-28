@@ -24,8 +24,10 @@
   },
   "eslint-myrules": {
     "modifiers": {
-      "react": false,
-      "es2015": false,
+      "global": {
+        "react": false,
+        "es2015": false,
+      }
     }
   },
   "devDependencies": {
@@ -35,10 +37,10 @@
   "dependencies": {
     // npm dependencies.
     "babel-eslint": "^4.0.5",
-    "eslint": "^1.0.0",
-    "eslint-myrules-manager": "^0.3.0",
+    "eslint": "^1.2.0",
+    "eslint-myrules-manager": "^0.4.0",
     "eslint-plugin-babel": "^2.0.0",
-    "eslint-plugin-react": "^3.0.0",
+    "eslint-plugin-react": "^3.3.0",
     "eslint-plugin-shadow-exception": "^1.1.1",
   }
 }

@@ -6,7 +6,7 @@
     "node": true
   },
   "globals": {},
-  "plugins": ["shadow-exception", "babel"],
+  "plugins": ["shadow-exception"],
   "rules": {
     "camelcase": [1, {
       "properties": "never"
@@ -110,37 +110,6 @@
     "wrap-iife": [2, "outside"],
     "yoda": [2, "never", {
       "exceptRange": true
-    }],
-    "array-bracket-spacing": [2, "never"],
-    "block-spacing": [2, "never"],
-    "brace-style": [2, "1tbs", {
-      "allowSingleLine": true
-    }],
-    "comma-style": [2, "last"],
-    "computed-property-spacing": [2, "never"],
-    "dot-location": [2, "property"],
-    "lines-around-comment": [2, {
-      "allowBlockStart": true,
-      "beforeBlockComment": true,
-      "beforeLineComment": true
-    }],
-    "max-len": [1, 80, 2, {
-      "ignoreUrls": true
-    }],
-    "no-floating-decimal": 2,
-    "no-inline-comments": 2,
-    "no-inner-declarations": 2,
-    "no-multiple-empty-lines": [2, {
-      "max": 2
-    }],
-    "no-nested-ternary": 2,
-    "babel/object-curly-spacing": [2, "never"],
-    "operator-linebreak": 2,
-    "padded-blocks": [2, "never"],
-    "space-before-blocks": [2, "always"],
-    "space-in-parens": [2, "never"],
-    "spaced-comment": [2, "always", {
-      "exceptions": ["/"]
     }]
   }
 }
