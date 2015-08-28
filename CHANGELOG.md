@@ -15,9 +15,9 @@
 
 * New React rules:
     * Now enforcing the closing bracket location for JSX multiline elements.
-      (`jsx-closing-bracket-locatioǹ)
+      (`jsx-closing-bracket-location`)
     * Now validating a specific indentation style for props.
-      (`jsx-indent-props̀)
+      (`jsx-indent-props`)
 
 * Updated dependency:
     * `eslint-myrules-manager` to v0.4 and adjusted configuration accordingly.
