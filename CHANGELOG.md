@@ -8,6 +8,8 @@
 * New ES2015 rules:
     * Now disallowing duplicate names in class members.
       (`no-dupe-class-members`)
+    * Now disallowing unnecessary concatenation of literals or template
+      literals. (`no-useless-concat`)
     * Now suggesting to use arrow functions as callbacks.
       (`prefer-arrow-callback`)
     * Now suggesting to use template literals instead of strings concatenation.
