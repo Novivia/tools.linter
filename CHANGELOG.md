@@ -1,6 +1,6 @@
 # Versions
 
-## v0.4.0 - ()
+## v0.4.0 - (29/09/2015)
 
 * New global rules:
     * Now disallowing the use of magic numbers. (`no-magic-numbers`)
