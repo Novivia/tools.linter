@@ -2,7 +2,7 @@ var utils = require("eslint-myrules-manager").utils;
 var path = require("path");
 
 function modifierMerge(file, apply, rules) {
-  if(apply) {
+  if (apply) {
     rules = utils.mergeRules(rules, utils.readRules(file));
   }
   return rules;

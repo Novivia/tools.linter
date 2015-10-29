@@ -2,24 +2,51 @@
 
 ## v0.4.0 - ()
 
-* New style rule:
+* New global rules:
+    * Now disallowing the use of magic numbers. (`no-magic-numbers`)
+    * Now disallowing the assignment of function expressions, except in the case
+      of arrow functions. (`func-style`)
+    * Now disallowing the use of undeclared variables, except if they're known
+      globals. (`no-undef`)
+    * Now disallowing dangling underscores in identifiers with the exception of
+      `_id`. (`no-underscore-dangle`)
+
+* New style rules:
     * Now disallowing spaces inside of single line blocks. (`block-spacing`)
+    * Now disallowing negated conditions in lone if statements.
+      (`no-negated-condition`)
+    * Now requiring a space before all keywords. (`space-before-keywords`)
+    * Now requiring a space after all keywords. (`space-after-keywords`)
 
 * New ES2015 rules:
     * Now disallowing duplicate names in class members.
       (`no-dupe-class-members`)
     * Now disallowing unnecessary concatenation of literals or template
       literals. (`no-useless-concat`)
+    * Now disallowing empty destructuring patterns. (`no-empty-pattern`)
     * Now suggesting to use arrow functions as callbacks.
       (`prefer-arrow-callback`)
     * Now suggesting to use template literals instead of strings concatenation.
       (`prefer-template `)
 
 * New React rules:
+    * Now disallowing the direct mutation of `this.state`.
+      (`no-direct-mutation-state`)
+    * Now suggesting components to be ES2015 classes. (`prefer-es6-class`)
     * Now enforcing the closing bracket location for JSX multiline elements.
       (`jsx-closing-bracket-location`)
     * Now validating a specific indentation style for props.
       (`jsx-indent-props`)
+
+* Updated rules:
+    * Now ignoring object properties when enforcing the `id-length` global rule.
+    * Now allowing short-circuiting and ternary expressions in the
+      `no-unused-expressions` global rule.
+    * Now allowing comments at the start of arrays, array-likes, objects and
+      object-likes in the `lines-around-comment` style rule. (`allowArrayStart`
+      and `allowObjectStart`)
+    * Now expecting properties beginning with "on" to be last in a component's
+      `propTypes`. (`callbacksLast`)
 
 * Updated dependency:
     * `eslint-myrules-manager` to v0.4 and adjusted configuration accordingly.

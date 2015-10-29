@@ -12,6 +12,7 @@
     "no-class-assign": 2,
     "no-const-assign": 2,
     "no-dupe-class-members": 2,
+    "no-empty-pattern": 2,
     "no-invalid-this": 1,
     "no-loop-func": 0,
     "no-mixed-requires": 2,
