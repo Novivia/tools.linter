@@ -8,6 +8,8 @@
   "rules": {
     // Rules for React components
 
+    "jsx-quotes": 2,
+
     // JSX takes care of that
     "react/display-name": [1, {"acceptTranspilerName": true}],
     "react/jsx-boolean-value": 1,
@@ -16,17 +18,22 @@
     "react/jsx-indent-props": [2, 2],
     "react/jsx-no-duplicate-props": 1,
     "react/jsx-no-undef": 1,
-    "react/jsx-quotes": [1, "double", "avoid-escape"],
-    "react/jsx-sort-prop-types": [1, {"ignoreCase": true}],
+    "react/jsx-sort-prop-types": [1, {
+      "callbacksLast": true,
+      "ignoreCase": true,
+    }],
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/no-did-mount-set-state": 1,
     "react/no-did-update-set-state": 1,
+    "react/no-direct-mutation-state": 1,
+
     // Allow to have more than 1 component per file, left at the discretion of
     // the developper
     "react/no-multi-comp": 0,
     "react/no-unknown-property": 1,
+    "react/prefer-es6-class": 1,
     "react/prop-types": 1,
     "react/react-in-jsx-scope": 1,
     "react/require-extension": [1, {"extensions": [".js", ".jsx"]}],
