@@ -7,19 +7,19 @@ module.exports = {
     frontend: path.resolve(__dirname, "rules", "frontend.eslintrc")
   },
   modifiers: {
-    frontend: {
-      react: modifiers.react,
-    },
-    global: {
-      "no-code-style": modifiers.codeStyle,
-      "es2015": modifiers.es2015
-    }
+    es2015: modifiers.es2015,
+    "no-code-style": modifiers.codeStyle,
+    react: modifiers.react,
   },
   defaultConfig: {
     modifiers: {
-      es2015: true,
-      react: true,
-      "no-code-style": false
-    }
+      frontend: {
+        react: true,
+      },
+      global: {
+        "no-code-style": false,
+        es2015: true,
+      }
+    },
   }
 };
