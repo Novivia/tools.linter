@@ -44,7 +44,7 @@
     "no-useless-call": 2,
     "quotes": 2,
     "id-length": [2, {
-        "exceptions": ["cb", "e", "err", "req", "res"],
+        "exceptions": ["_", "__", "cb", "db", "e", "err", "lot", "req", "res"],
         "min": 4,
         "max": 40,
         "properties": "never",

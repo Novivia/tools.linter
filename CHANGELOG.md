@@ -40,6 +40,13 @@
 
 * Updated rules:
     * Now ignoring object properties when enforcing the `id-length` global rule.
+    * Now allowing the following identifiers when enforcing the `id-length`
+      global rule:
+          * `_`
+          * `__`
+          * `db`
+          * `lot`
+
     * Now allowing short-circuiting and ternary expressions in the
       `no-unused-expressions` global rule.
     * Now allowing comments at the start of arrays, array-likes, objects and
