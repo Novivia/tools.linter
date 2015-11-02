@@ -3,12 +3,14 @@
     "babel"
   ],
   "rules": {
+    "arrow-body-style": [2, "as-needed"],
     "arrow-spacing": 2,
     "comma-dangle": [2, "always-multiline"],
     "constructor-super": 2,
     "babel/generator-star-spacing": [2, "after"],
     "new-cap": 0,
     "babel/new-cap": 2,
+    "no-arrow-condition": 2,
     "no-class-assign": 2,
     "no-const-assign": 2,
     "no-dupe-class-members": 2,

@@ -1,5 +1,17 @@
 # Versions
 
+## v0.5.0 - ()
+
+* New ES2015 rules:
+    * Now disallowing arrow functions where a condition is expected.
+      (`no-arrow-condition`)
+    * Now enforcing proper arrow body style depending on body content.
+      (`arrow-body-style`)
+
+* Updated rules:
+    * Now only allowing 1 empty line to end a file when enforcing the
+      `no-multiple-empty-lines` style rule.
+
 ## v0.4.0 - (29/09/2015)
 
 * New global rules:
