@@ -6,7 +6,7 @@
     "node": true
   },
   "globals": {},
-  "plugins": ["shadow-exception", "babel"],
+  "plugins": ["babel"],
   "rules": {
     "camelcase": [1, {
       "properties": "never"

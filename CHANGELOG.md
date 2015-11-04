@@ -1,5 +1,11 @@
 # Versions
 
+## v0.5.1 - (05/11/2015)
+
+* Properly removed all leftovers from the removed
+  `eslint-plugin-shadow-exception` ESLint plugin.
+
+
 ## v0.5.0 - (03/11/2015)
 
 * New ES2015 rules:
