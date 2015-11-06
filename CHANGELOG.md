@@ -1,5 +1,27 @@
 # Versions
 
+## v0.5.2 - ()
+
+* Added the following exceptions to the `no-underscore-dangle` rule:
+    * `__DEV__`
+    * `__PRERENDER__`
+    * `__PROD__`
+    * `__STAGE__`
+    * `__TEST_ENV__`
+    * `_id`
+
+* Added the following exceptions to the `id-length` rule:
+    * `key`
+    * `src`
+    * `url`
+
+* Added an exception for `self` in the `no-shadow` rule.
+* Relaxed the format requirement for descriptions in the `valid-jsdoc` rule.
+* Added an exception for the `?` operator in the `operator-linebreak` style
+  rule. It now has to be at the end of a multi-line statement like all other
+  operators except for `:`. This is how it should already have been.
+
+
 ## v0.5.1 - (05/11/2015)
 
 * Properly removed all leftovers from the removed
