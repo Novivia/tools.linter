@@ -1,6 +1,6 @@
 # Versions
 
-## v0.5.2 - ()
+## v0.5.2 - (06/11/2015)
 
 * Added the following exceptions to the `no-underscore-dangle` rule:
     * `__DEV__`
