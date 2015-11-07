@@ -43,7 +43,7 @@
     "no-useless-call": 2,
     "quotes": 2,
     "id-length": [2, {
-      "exceptions": ["_", "__", "cb", "db", "e", "err", "lot", "req", "res"],
+      "exceptions": ["_", "__", "cb", "db", "e", "err", "key", "lot", "req", "res", "src", "url"],
       "min": 4,
       "max": 40,
       "properties": "never"
@@ -88,7 +88,7 @@
     "no-sequences": 2,
     "no-shadow": [2, {
       "builtinGlobals": true,
-      "allow": ["callback", "cb", "err", "next", "res", "response", "result"]
+      "allow": ["callback", "cb", "err", "next", "res", "response", "result", "self"]
     }],
     "no-shadow-restricted-names": 2,
     "no-octal-escape": 2,
@@ -98,7 +98,7 @@
       "typeof": true
     }],
     "no-underscore-dangle": [2, {
-      "allow": ["_id"]
+      "allow": ["__DEV__", "__PRERENDER__", "__PROD__", "__STAGE__", "__TEST_ENV__", "_id"]
     }],
     "no-unexpected-multiline": 2,
     "no-unused-expressions": [2, {
@@ -111,7 +111,7 @@
     "no-use-before-define": [2, "nofunc"],
     "no-with": 2,
     "valid-jsdoc": [2, {
-      "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$",
+      "matchDescription": "^[A-Z](?:.|\\s)*?[.]$",
       "prefer": {
         "returns": "return"
       },
@@ -149,7 +149,12 @@
     "no-negated-condition": 2,
     "no-nested-ternary": 2,
     "babel/object-curly-spacing": [2, "never"],
-    "operator-linebreak": 2,
+    "operator-linebreak": [2, "after", {
+      "overrides": {
+        "?": "after",
+        ":": "before"
+      }
+    }],
     "padded-blocks": [2, "never"],
     "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
