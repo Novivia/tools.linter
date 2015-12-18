@@ -1,5 +1,11 @@
 # Versions
 
+## v0.5.3 - (18/12/2015)
+
+* Updated `eslint-myrules-manager` to v0.5 to fix crash pertaining to recent
+  ESLint internal modification.
+
+
 ## v0.5.2 - (06/11/2015)
 
 * Added the following exceptions to the `no-underscore-dangle` rule:
