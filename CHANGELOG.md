@@ -1,5 +1,36 @@
 # Versions
 
+## v0.6.0 - ()
+
+* New global rule:
+    * Now disallowing the use of lexical declarations in `case`/`default`
+      clauses. (`no-case-declarations`)
+
+* New ES2015+ rule:
+    * Now disallowing the use of `await` in loops. (`no-await-in-loop`)
+
+* New style rule:
+    * Now requiring the use of the second argument for `parseInt`, unless it's
+      the value 10. (`radix`)
+
+* New React rules:
+    * Now ensuring that any component or prop methods used to handle events are
+      correctly prefixed. (`jsx-handler-names`)
+    * Now enforcing component indentation. (`jsx-indent`)
+    * Now pointing out missing key properties. (`jsx-key`)
+    * Now enforcing PascalCase for component names. (`jsx-pascal-case`)
+    * Now disallowing the use of deprecated React methods. (`no-deprecated`)
+    * Now disallowing the use of `isMounted`. (`no-is-mounted`)
+    * Now disallowing the use of strings for refs. (`no-string-refs`)
+
+* Updated rules:
+    * Now allowing `setState` calls in functions inside `componentDidUpdate`,
+      for the `no-did-update-set-state` React rule.
+    * Added the following exceptions to the `id-length` rule:
+        * `fs`
+        * `log`
+
+
 ## v0.5.3 - (18/12/2015)
 
 * Updated `eslint-myrules-manager` to v0.5 to fix crash pertaining to recent
