@@ -1,5 +1,10 @@
 # Versions
 
+## v0.6.1 - (12/01/2016)
+
+* Fixed configuration mistake for the `jsx-handler-names` React rule.
+
+
 ## v0.6.0 - (12/01/2016)
 
 * New global rule:

@@ -15,7 +15,7 @@
     "react/jsx-boolean-value": 1,
     "react/jsx-closing-bracket-location": 1,
     "react/jsx-curly-spacing": 1,
-    "jsx-handler-names": [1, {
+    "react/jsx-handler-names": [1, {
       "eventHandlerPrefix": "on",
       "eventHandlerPropPrefix": "on",
     }],
