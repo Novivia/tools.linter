@@ -1,6 +1,6 @@
 # Versions
 
-## v0.6.0 - ()
+## v0.6.0 - (12/01/2016)
 
 * New global rule:
     * Now disallowing the use of lexical declarations in `case`/`default`
