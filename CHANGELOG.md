@@ -28,6 +28,9 @@
       for the `no-did-update-set-state` React rule.
     * Added the following exceptions to the `id-length` rule:
         * `fs`
+        * `i`
+        * `j`
+        * `k`
         * `log`
 
 * New dependency:
