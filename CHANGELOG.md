@@ -30,6 +30,12 @@
         * `fs`
         * `log`
 
+* New dependency:
+    * `eslint-plugin-flow-vars`.
+
+* Updated dependency:
+    * `@auex/build-module` to v0.2.
+
 
 ## v0.5.3 - (18/12/2015)
 
