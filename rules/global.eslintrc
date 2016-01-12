@@ -31,7 +31,7 @@
     "space-infix-ops": 2,
     "space-return-throw-case": 2,
     "space-unary-ops": 2,
-    "no-magic-numbers": [1, {"enforceConst": true}],
+    "no-magic-numbers": 1,
 
     // Allow multi spaces for variable declaration (alignement)
     "no-multi-spaces": [2, {"exceptions": {"VariableDeclarator": true}}],

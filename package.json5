@@ -1,7 +1,7 @@
 {
   "name": "@auex/eslint-myrules",
   "role": "linter",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "publishConfig": {
     "registry": "https://npm.novivia.com"
   },

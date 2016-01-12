@@ -1,5 +1,12 @@
 # Versions
 
+## v0.6.2 - (12/01/2016)
+
+* Updated rule:
+    * No longer enforcing the use of `const` outside ES2015 environments for the
+      `no-magic-numbers` global rule.
+
+
 ## v0.6.1 - (12/01/2016)
 
 * Fixed configuration mistake for the `jsx-handler-names` React rule.
