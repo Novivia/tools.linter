@@ -50,7 +50,12 @@
             "db",
             "e",
             "err",
+            "fs",
+            "i",
+            "j",
+            "k",
             "key",
+            "log",
             "lot",
             "req",
             "res",
@@ -79,6 +84,7 @@
     "no-alert": 2,
     "no-array-constructor": 2,
     "no-caller": 2,
+    "no-case-declarations": 2,
     "no-catch-shadow": 2,
 
     // Disallow use of console (use module.logger)

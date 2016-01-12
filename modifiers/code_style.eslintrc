@@ -31,6 +31,7 @@
         "overrides": {"?": "after", ":": "before"}
     }],
     "padded-blocks": [2, "never"],
+    "radix": [2, "as-needed"],
     "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
     "space-before-keywords": [2, "always"],

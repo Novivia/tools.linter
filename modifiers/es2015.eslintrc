@@ -1,8 +1,12 @@
 {
   "plugins": [
-    "babel"
+    "babel",
+    "flow-vars",
   ],
   "rules": {
+    "flow-vars/define-flow-type": 1,
+    "flow-vars/use-flow-type": 1,
+
     "arrow-body-style": [2, "as-needed"],
     "arrow-spacing": 2,
     "comma-dangle": [2, "always-multiline"],
@@ -10,6 +14,7 @@
     "babel/generator-star-spacing": [2, "after"],
     "new-cap": 0,
     "babel/new-cap": 2,
+    "babel/no-await-in-loop": 2,
     "no-arrow-condition": 2,
     "no-class-assign": 2,
     "no-const-assign": 2,
