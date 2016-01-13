@@ -1,5 +1,10 @@
 # Versions
 
+## v0.6.3 - (13/01/2016)
+
+* Updated `babel-eslint` to v5-beta6.
+
+
 ## v0.6.2 - (12/01/2016)
 
 * Updated rule:
