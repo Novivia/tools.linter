@@ -10,13 +10,14 @@
     "computed-property-spacing": [2, "never"],
     "dot-location": [2, "property"],
     "lines-around-comment": [2, {
-        "allowArrayStart": true,
-        "allowBlockStart": true,
-        "allowObjectStart": true,
-        "beforeBlockComment": true,
-        "beforeLineComment": true
+      "allowArrayStart": true,
+      "allowBlockStart": true,
+      "allowObjectStart": true,
+      "beforeBlockComment": true,
+      "beforeLineComment": true
     }],
     "max-len": [1, 80, 2, {"ignoreUrls": true}],
+    "newline-per-chained-call": 2,
     "no-floating-decimal": 2,
     "no-inline-comments": 2,
 
@@ -26,15 +27,18 @@
     "no-negated-condition": 2,
     "no-nested-ternary": 2,
     "no-spaced-func": 2,
+    "object-curly-newline": [2, {
+      "ObjectExpression": {"multiline": true, "minProperties": 1},
+      "ObjectPattern": {"multiline": true, "minProperties": 0},
+    }],
     "babel/object-curly-spacing": [2, "never"],
     "operator-linebreak": [2, "after", {
-        "overrides": {"?": "after", ":": "before"}
+      "overrides": {"?": "after", ":": "before"}
     }],
     "padded-blocks": [2, "never"],
     "radix": [2, "as-needed"],
-    "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
-    "space-before-keywords": [2, "always"],
+    "space-before-function-paren": [2, "never"],
     "space-in-parens": [2, "never"],
     "space-infix-ops": 2,
     "spaced-comment": [2, "always", {"exceptions": ["/"]}],

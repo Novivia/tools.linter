@@ -5,6 +5,7 @@ function modifierMerge(file, apply, rules) {
   if (apply) {
     rules = utils.mergeRules(rules, utils.readRules(file));
   }
+
   return rules;
 }
 
