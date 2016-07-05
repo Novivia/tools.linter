@@ -18,8 +18,8 @@
     "eol-last": 2,
     "func-names": 2,
     "id-length": [2, {
-      "exceptions": ["_", "__", "cb", "db", "e", "err", "fs", "i", "j", "k", "key", "log", "lot", "req", "res", "src", "url"],
-      "min": 4,
+      "exceptions": ["_", "__", "cb", "db", "e", "fs", "i", "j", "k"],
+      "min": 3,
       "max": 40,
       "properties": "never"
     }],
@@ -128,7 +128,7 @@
       "typeof": true
     }],
     "no-underscore-dangle": [2, {
-      "allow": ["__DEV__", "__PRERENDER__", "__PROD__", "__STAGE__", "__TEST_ENV__", "_id"],
+      "allow": ["__", "__DEV__", "__PRERENDER__", "__PROD__", "__STAGE__", "__TEST_ENV__", "_id"],
       "allowAfterThis": true
     }],
     "no-unexpected-multiline": 2,
@@ -181,7 +181,6 @@
       "max": 2,
       "maxEOF": 1
     }],
-    "no-negated-condition": 2,
     "no-nested-ternary": 2,
     "object-curly-newline": [2, {
       "ObjectExpression": {

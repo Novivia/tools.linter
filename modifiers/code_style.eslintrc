@@ -24,7 +24,6 @@
     // Prevents named function to be declared outside the root of a function.
     "no-inner-declarations": 2,
     "no-multiple-empty-lines": [2, {"max": 2, "maxEOF": 1}],
-    "no-negated-condition": 2,
     "no-nested-ternary": 2,
     "no-spaced-func": 2,
     "object-curly-newline": [2, {
