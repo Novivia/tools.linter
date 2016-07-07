@@ -1,45 +1,116 @@
 {
   "plugins": [
-    "babel"
+    "babel",
   ],
   "rules": {
-    "array-bracket-spacing": [2, "never"],
-    "block-spacing": [2, "never"],
-    "brace-style": [2, "1tbs", {"allowSingleLine": true}],
-    "comma-style": [2, "last"],
-    "computed-property-spacing": [2, "never"],
-    "dot-location": [2, "property"],
-    "lines-around-comment": [2, {
-      "allowArrayStart": true,
-      "allowBlockStart": true,
-      "allowObjectStart": true,
-      "beforeBlockComment": true,
-      "beforeLineComment": true
-    }],
-    "max-len": [1, 80, 2, {"ignoreUrls": true}],
-    "newline-per-chained-call": 2,
-    "no-floating-decimal": 2,
-    "no-inline-comments": 2,
+    "array-bracket-spacing": [
+      "error",
+      "never",
+    ],
+    "block-spacing": [
+      "error",
+      "never",
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {"allowSingleLine": true},
+    ],
+    "comma-style": [
+      "error",
+      "last",
+    ],
+    "computed-property-spacing": [
+      "error",
+      "never",
+    ],
+    "dot-location": [
+      "error",
+      "property",
+    ],
+    "lines-around-comment": [
+      "error",
+      {
+        "allowArrayStart": true,
+        "allowBlockStart": true,
+        "allowObjectStart": true,
+        "beforeBlockComment": true,
+        "beforeLineComment": true,
+      },
+    ],
+    "max-len": [
+      "error",
+      80,
+      2,
+      {"ignoreUrls": true},
+    ],
+    "newline-per-chained-call": "error",
+    "no-floating-decimal": "error",
+    "no-inline-comments": "error",
 
     // Prevents named function to be declared outside the root of a function.
-    "no-inner-declarations": 2,
-    "no-multiple-empty-lines": [2, {"max": 2, "maxEOF": 1}],
-    "no-nested-ternary": 2,
-    "no-spaced-func": 2,
-    "object-curly-newline": [2, {
-      "ObjectExpression": {"multiline": true, "minProperties": 1},
-      "ObjectPattern": {"multiline": true, "minProperties": 0},
-    }],
-    "babel/object-curly-spacing": [2, "never"],
-    "operator-linebreak": [2, "after", {
-      "overrides": {"?": "after", ":": "before"}
-    }],
-    "padded-blocks": [2, "never"],
-    "radix": [2, "as-needed"],
-    "space-before-blocks": [2, "always"],
-    "space-before-function-paren": [2, "never"],
-    "space-in-parens": [2, "never"],
-    "space-infix-ops": 2,
-    "spaced-comment": [2, "always", {"exceptions": ["/"]}],
-  }
+    "no-inner-declarations": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxEOF": 1,
+      },
+    ],
+    "no-nested-ternary": "error",
+    "no-spaced-func": "error",
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "minProperties": 1,
+          "multiline": true,
+        },
+        "ObjectPattern": {
+          "minProperties": 0,
+          "multiline": true,
+        },
+      },
+    ],
+    "babel/object-curly-spacing": [
+      "error",
+      "never",
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "after",
+          ":": "before",
+        },
+      },
+    ],
+    "padded-blocks": [
+      "error",
+      "never",
+    ],
+    "radix": [
+      "error",
+      "as-needed",
+    ],
+    "space-before-blocks": [
+      "error",
+      "always",
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never",
+    ],
+    "space-in-parens": [
+      "error",
+      "never",
+    ],
+    "space-infix-ops": "error",
+    "spaced-comment": [
+      "error",
+      "always",
+      {"exceptions": ["/"]},
+    ],
+  },
 }

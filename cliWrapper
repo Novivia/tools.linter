@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-var execute = require("eslint-myrules-manager").execute;
-var myRules = require("./index");
+
+// For dev only.
+// require("babel-register");
+
+const execute = require("eslint-myrules-manager").execute;
+const myRules = require("./");
 
 execute(myRules, process.argv);

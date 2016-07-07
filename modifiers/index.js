@@ -1,20 +1,48 @@
-var utils = require("eslint-myrules-manager").utils;
-var path = require("path");
+/**
+ * Copyright 2013-present, Novivia, Inc.
+ * All rights reserved.
+ */
 
-function modifierMerge(file, apply, rules) {
-  if (apply) {
-    rules = utils.mergeRules(rules, utils.readRules(file));
+import {join as joinPath} from "path";
+import {utils} from "eslint-myrules-manager";
+
+const {
+  mergeRules,
+  readRules,
+} = utils;
+
+function makeModifier({file, modifier = modifierMerge}) {
+  return (apply, rules) => modifier({
+    file,
+    apply,
+    rules,
+  });
+}
+
+function modifierMerge({apply, file, rules}) {
+  if (!apply) {
+    return rules;
   }
 
-  return rules;
+  return mergeRules(rules, readRules(file));
 }
 
-function noMerge(file, dontApply, rules) {
-  return modifierMerge(file, !dontApply, rules);
+function noMerge({apply, ...args}) {
+  return modifierMerge({
+    ...args,
+    apply: !apply,
+  });
 }
 
-module.exports = {
-  react: modifierMerge.bind(null, path.join(__dirname, "react.eslintrc")),
-  es2015: modifierMerge.bind(null, path.join(__dirname, "es2015.eslintrc")),
-  codeStyle: noMerge.bind(null, path.join(__dirname, "code_style.eslintrc")),
-};
+export const codeStyle = makeModifier({
+  file: joinPath(__dirname, "code_style.eslintrc"),
+  modifier: noMerge,
+});
+
+export const es2015 = makeModifier({
+  file: joinPath(__dirname, "es2015.eslintrc"),
+});
+
+export const react = makeModifier({
+  file: joinPath(__dirname, "react.eslintrc"),
+});
