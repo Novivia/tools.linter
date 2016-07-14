@@ -162,10 +162,7 @@
     "jsx-a11y/aria-role": "error",
     "jsx-a11y/aria-unsupported-elements": "error",
     "jsx-a11y/heading-has-content": "error",
-
-    // FIXME: Activate once https://github.com/evcohen/jsx-ast-utils/pull/1 is
-    // merged and published.
-    // "jsx-a11y/href-no-hash": "error",
+    "jsx-a11y/href-no-hash": "error",
     "jsx-a11y/html-has-lang": "error",
     "jsx-a11y/img-has-alt": "error",
     "jsx-a11y/label-has-for": "error",

@@ -1,11 +1,11 @@
 {
-  "name": "@auex/eslint-myrules",
+  "name": "@novivia/linter",
   "role": "linter",
   "version": "0.6.3",
   "publishConfig": {
     "registry": "https://npm.novivia.com"
   },
-  "description": "ESlint rules for AuctionEx",
+  "description": "ESlint rules for Novivia",
   "authors": [
     "Michaël Ferris <mike.ferrisb@gmail.com>",
     "Mathieu M-Gosselin <mathieumg@novivia.com>",
@@ -16,7 +16,7 @@
     "url": "git+ssh://git.novivia.com/auex/tools.rules"
   },
   "bin": {
-    "eslint-myrules": "./cliWrapper"
+    "novivia-linter": "./cliWrapper",
   },
   "main": "index.js",
   "scripts": {
@@ -25,12 +25,12 @@
     "pub": "build-module publish",
     "release": "build-module release",
   },
-  "eslint-myrules": {
+  "novivia-linter": {
     "modifiers": {
       "global": {
         "react": false,
-      }
-    }
+      },
+    },
   },
   "devDependencies": {
     // AuctionEx dependencies.
