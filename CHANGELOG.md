@@ -1,5 +1,223 @@
 # Versions
 
+## v1.0.0 - ()
+
+* Project now maintained under the Novivia scope (@novivia) and renamed to
+  "linter". (formerly "eslint-myrules") Options must now be specified
+  using the `novivia-linter` field in the package manifest or using a
+  `.novivialinterrc` file.
+
+* New global rules:
+    * Now enforcing return statements in callbacks of array’s methods .
+      (`array-callback-return`)
+    * Now requiring or disallow named function expressions. (`func-names`)
+    * Now ensuring that files begin with the Novivia header. (`header/header`)
+    * Now enforcing consistent spacing before and after keywords .
+      (`keyword-spacing`)
+    * Now validating the file name against the default exported value in the
+      module. (`filenames/match-exported`)
+    * Now enforcing a certain file naming convention.
+      (`filenames/match-regex`)
+    * Now enforcing a maximum file length of 500 lines, excluding whitespace
+      and comments. (`max-lines`)
+    * Now enforcing a maximum number of statements allowed per line.
+      (`max-statements-per-line`)
+    * Now requiring an empty line before return statements.
+      (`newline-before-return`)
+    * Now disallowing deprecated APIs. (`node/no-deprecated-api`)
+    * Now disallowing unnecessary nested blocks. (`no-lone-blocks`)
+    * Now disallowing unmodified conditions of loops.
+      (`no-unmodified-loop-condition`)
+    * Now disallowing control flow statements in finally blocks.
+      (`no-unsafe-finally`)
+    * Now disallowing unnecessary computed property keys on objects.
+      (`no-useless-computed-key`)
+    * Now disallowing unnecessary escape usage. (`no-useless-escape`)
+    * Now disallowing renaming import, export, and destructured assignments to
+      the same name. (`no-useless-rename`)
+    * Now disallowing whitespace before properties.
+      (`no-whitespace-before-property`)
+    * Now enforcing placing object properties on separate lines.
+      (`object-property-newline`)
+    * Now enforcing spacing between rest and spread operators and their
+      expressions. (`rest-spread-spacing`)
+    * Now suggesting the correct usage for the shebang. (`node/shebang`)
+    * Now disallowing the Unicode Byte Order Mark (BOM). (`unicode-bom`)
+    * Security-oriented rules:
+        * Now detecting calls to `Buffer` with the `noassert` flag set.
+          (`security/detect-buffer-noassert`)
+        * Now detecting instances of `child_process` and non-literal
+          `cp.exec()`. (`security/detect-child-process`)
+        * Now detecting variables in the filename argument of `fs` calls.
+          (`security/detect-non-literal-fs-filename`)
+        * Now detecting dynamic regular expressions.
+          (`security/detect-non-literal-regexp`)
+        * Now detecting insecure comparisons.
+          (`security/detect-possible-timing-attacks`)
+        * Now detecting if `pseudoRandomBytes()` is in use.
+          (`security/detect-pseudoRandomBytes`)
+        * Now locating potentially unsafe regular expressions.
+          (`security/detect-unsafe-regex`)
+
+    * Lo-Dash specific rules:
+        * Now disallowing `thisArg` for Lo-Dash method callbacks.
+          (`lodash/callback-binding`)
+        * Now enforcing a specific chain style. (`lodash/chain-style`)
+        * Now ensuring values returned from collection methods are used
+          properly. (`lodash/collection-method-value`)
+        * Now ensuring a value is always returned in iteratees of Lo-Dash
+          collection methods that aren't `forEach`.
+          (`lodash/collection-return`)
+        * Now enforce a specific function composition direction.
+          (`lodash/consistent-compose`)
+        * Now enforcing `_.identity` shorthand syntax.
+          (`lodash/identity-shorthand`)
+        * Now enforcing `_.matches` property shorthand syntax.
+          (`lodash/matches-prop-shorthand`)
+        * Now enforcing `_.matches` shorthand syntax.
+          (`lodash/matches-shorthand`)
+        * Now disallowing the use of `.commit()` on chains that should end
+          with `.value()`. (`lodash/no-commit`)
+        * Now disallowing the use of `.value()` on chains that have already
+          ended. (`lodash/no-double-unwrap`)
+        * Now disallowing superfluous arguments on Lo-Dash methods with a
+          specified arity. (`lodash/no-extra-args`)
+        * Now disallowing chaining syntax for single methods.
+          (`lodash/no-single-chain`)
+        * Now enforcing a specific path style for methods like `get` and
+          `property`. (`lodash/path-style`)
+
+* New frontend rule:
+    * Now preventing Lo-Dash and React-Bootstrap from being completely
+      imported. (`lean-imports/import`)
+
+* New ES2015+ rules:
+    * Now ensuring a default export is present, given a default import.
+      (`import/default`)
+    * Now reporting any invalid exports such as re-exports of the same name.
+      (`import/export`)
+    * Now ensuring consistent use of file extension within the import path.
+      (`import/extensions`)
+    * Now ensuring all imports appear before other statements.
+      (`import/imports-first`)
+    * Now ensuring named imports correspond to a named export in the remote
+      file. (`import/named`)
+    * Now enforcing a newline after import statements.
+      (`import/newline-after-import`)
+    * Now disallowing modifying variables of class declarations.
+      (`no-class-assign`)
+    * Now disallowing arrow functions where they could be confused with
+      comparisons. (`no-confusing-arrow`)
+    * Now disallowing constant expressions in conditions.
+      (`no-constant-condition`)
+    * Now reporting imported names marked with @deprecated documentation tag.
+      (`import/no-deprecated`)
+    * Now disallowing duplicate imports. (`no-duplicate-imports`)
+    * Now forbidding the use of mutable exports with `var` or `let`.
+      (`import/no-mutable-exports`)
+    * Now disallowing the `Symbol` constructor. (`no-new-symbol`)
+    * Now ensuring imported namespaces contain dereferenced properties as they
+      are dereferenced. (`import/no-namespace`)
+    * Now ensuring imports point to a file/module that can be resolved.
+      (`import/no-unresolved`)
+    * Now disallowing unnecessary constructor. (`no-useless-constructor`)
+    * Now suggesting using the rest parameters instead of arguments.
+      (`prefer-rest-params`)
+    * Now disallowing usage of spacing in template strings.
+      (`template-curly-spacing`)
+    * Now enforcing spacing around the `*` in `yield*` expressions.
+      (`yield-star-spacing`)
+    * Now ensuring that a new promise or a value is returned inside a `then()`.
+      (`promise/always-return`)
+    * Now ensuring that each time a `then()` is applied to a promise, a
+      `catch()` is applied as well. (`promise/catch-or-return`)
+    * Now enforcing standard parameter names for Promise constructors.
+      (`promise/param-names`)
+    * Added new Flow-related rules, applied only to files with the `@flow`
+      annotation, so it doesn't become intrusive:
+        * Now requiring that all function parameters have type annotations.
+          (`flowtype/require-parameter-type`)
+        * Now requiring that functions have return type annotation.
+          (`flowtype/require-return-type`)
+        * Now verifying that files have a valid `@flow` annotation. It will
+          report annotations with typos (such as `// @floww`) or not placed at
+          the top of the file. (`flowtype/require-valid-file-annotation`)
+        * Now enforcing consistent spacing after the type annotation colon.
+          (`flowtype/space-after-type-colon`)
+        * Now enforcing consistent spacing before the type annotation colon.
+          (`flowtype/space-before-type-colon`)
+        * Now enforcing a consistent naming pattern for type aliases.
+          (`flowtype/type-id-match`)
+
+* New style rules:
+    * Now requiring a newline after each call in a method chain.
+      (`newline-per-chained-call`)
+    * Now disallowing nested ternary expressions. (`no-nested-ternary`)
+    * Now disallowing spacing between function identifiers and their
+      applications. (`no-spaced-func`)
+    * Now enforcing consistent line breaks inside braces.
+      (`object-curly-newline`)
+    * Now disallowing a space before function parenthesis.
+      (`space-before-function-paren`)
+
+* New React rules:
+    * Now disallowing spaces around equal signs in JSX attributes.
+      (`react/jsx-equals-spacing`)
+    * Now restricting file extensions that may contain JSX to `.jsx`.
+      (`react/jsx-filename-extension`)
+    * Now preventing the usage of unsafe `target="_blank"`.
+      (`react/jsx-no-target-blank`)
+    * Now enforcing the position of the first prop in JSX.
+      (`jsx-first-prop-new-line`)
+    * Now validating spacing before closing bracket in JSX.
+      (`react/jsx-space-before-closing`)
+    * Now preventing comments from being inserted as text nodes.
+      (`react/no-comment-textnodes`)
+    * Now preventing usage of the return value of `React.render`.
+      (`react/no-render-return-value`)
+    * Now enforcing stateless React components to be written as pure
+      functions. (`react/prefer-stateless-function`)
+    * Now enforcing React components to have a `shouldComponentUpdate` method.
+      (`react/require-optimization`)
+    * Now enforcing ES2015+ classes extending `React.Component` to return
+      a value in their render function. (`react/require-render-return`)
+
+* Updated rules:
+    * Reduced the minimum identifier length to 2 in the `id-length` rule, as
+      there were too many relevant 3-letter identifiers.
+    * Now ignoring array indexes in the `no-magic-numbers` rule.
+
+* Removed rules:
+    * `no-negated-condition`
+
+* New dependencies:
+    * `babel-cli`.
+    * `babel-plugin-syntax-trailing-function-commas`.
+    * `babel-plugin-transform-es2015-destructuring`.
+    * `babel-plugin-transform-es2015-modules-commonjs`.
+    * `babel-plugin-transform-es2015-parameters`.
+    * `babel-register`.
+    * `eslint-plugin-filenames`.
+    * `eslint-plugin-flowtype`.
+    * `eslint-plugin-header`.
+    * `eslint-plugin-import`.
+    * `eslint-plugin-jsx-a11y`.
+    * `eslint-plugin-lean-imports`.
+    * `eslint-plugin-lodash`.
+    * `eslint-plugin-markdown`.
+    * `eslint-plugin-new-with-error`.
+    * `eslint-plugin-node`.
+    * `eslint-plugin-promise`.
+    * `eslint-plugin-security`.
+    * `eslint-plugin-you-dont-need-lodash-underscore`.
+
+* Updated dependencies:
+    * `babel-eslint` to v6.
+    * `eslint` to v3.
+    * `eslint-plugin-flow-vars` to v0.4.
+    * `eslint-plugin-react` to v5.
+
+
 ## v0.6.3 - (13/01/2016)
 
 * Updated `babel-eslint` to v5-beta6.
