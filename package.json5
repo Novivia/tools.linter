@@ -13,7 +13,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git.novivia.com/auex/tools.rules"
+    "url": "git+ssh://git@git.novivia.com/nov/tools.linter.git"
   },
   "bin": {
     "novivia-linter": "./cliWrapper",
