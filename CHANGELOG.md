@@ -8,11 +8,11 @@
   `.novivialinterrc` file.
 
 * New global rules:
-    * Now enforcing return statements in callbacks of array’s methods .
+    * Now enforcing return statements in callbacks of array’s methods.
       (`array-callback-return`)
     * Now requiring or disallow named function expressions. (`func-names`)
     * Now ensuring that files begin with the Novivia header. (`header/header`)
-    * Now enforcing consistent spacing before and after keywords .
+    * Now enforcing consistent spacing before and after keywords.
       (`keyword-spacing`)
     * Now validating the file name against the default exported value in the
       module. (`filenames/match-exported`)
