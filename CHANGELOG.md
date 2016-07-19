@@ -86,6 +86,43 @@
           (`lodash/no-single-chain`)
         * Now enforcing a specific path style for methods like `get` and
           `property`. (`lodash/path-style`)
+        * Now enforcing Lo-Dash chains over nested Lo-Dash calls.
+          (`lodash/prefer-chain`)
+        * Now enforcing `_.compact` over `_.filter` for only truthy values.
+          (`lodash/prefer-compact`)
+        * Now enforcing `_.filter` over `_.forEach` with an if statement
+          inside. (`lodash/prefer-filter`)
+        * Now enforcing `_.flatMap` over consecutive map and `_.flatten`.
+          (`lodash/prefer-flat-map`)
+        * Now enforcing using `_.get` or `_.has` over expression chains like
+          `a && a.b && a.b.c`. (`lodash/prefer-get`)
+        * Now enforcing using `_.invoke` over `_.map` with a method call
+          inside. (`lodash/prefer-invoke-map`)
+        * Now enforcing using `_.isNil` over checks for both null and
+          undefined. (`lodash/prefer-is-nil`)
+        * Now enforcing using `_.map` over `_.forEach` with a push inside.
+          (`lodash/prefer-map`)
+        * Now enforcing using `_.matches` over conditions like
+          `a.foo === 1 && a.bar === 2 && a.baz === 3`.
+          (`lodash/prefer-matches`)
+        * Now enforcing using `_.noop` over empty functions.
+          (`lodash/prefer-noop`)
+        * Now enforcing using `_.overSome` and `_.overEvery` over checks with
+          `&&` and `||` for methods that have a boolean check iteratee.
+          (`lodash/prefer-over-quantifier`)
+        * Now enforcing using `_.reject` over `_.filter` with `!(expression)`
+          or `x.prop1 !== value`. (`lodash/prefer-reject`)
+        * Now enforcing using `_.prototype.thru` in the chain and not calling
+          functions in the initial value. (`lodash/prefer-thru`)
+        * Now enforcing using `_.times` over `_.map` without using the
+          iteratee's arguments. (`lodash/prefer-times`)
+        * Now enforcing using array and string methods in the chain and no
+          the initial value. (`lodash/prefer-wrapper-method`)
+        * Now enforcing using main method names instead of aliases.
+          (`lodash/preferred-alias`)
+        * Now enforcing property shorthand syntax. (`lodash/prop-shorthand`)
+        * Now preventing chaining without evaluation via `value()` or
+          non-chainable methods like `max()`. (`lodash/unwrap`)
 
 * New frontend rule:
     * Now preventing Lo-Dash and React-Bootstrap from being completely

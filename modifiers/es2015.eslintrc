@@ -126,7 +126,7 @@
 
     // FIXME: Reactivate once
     // https://github.com/cht8687/You-Dont-Need-Lodash-Underscore/pull/59
-    // is merged and published.
+    // is published.
     // "you-dont-need-lodash-underscore/assign": "error",
     // "you-dont-need-lodash-underscore/concat": "error",
     // "you-dont-need-lodash-underscore/each": "error",
