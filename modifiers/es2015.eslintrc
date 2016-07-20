@@ -34,7 +34,10 @@
     "import/default": "error",
     "import/export": "error",
     "import/extensions": "error",
-    "babel/func-params-comma-dangle": "error",
+    "babel/func-params-comma-dangle": [
+      "error",
+      "always-multiline",
+    ],
     "babel/generator-star-spacing": [
       "error",
       "after",

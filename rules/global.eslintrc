@@ -354,7 +354,7 @@
     "filenames/match-exported": "error",
     "filenames/match-regex": [
       "error",
-      "^([a-z0-9]+)([A-Z][a-z0-9]+)*(JSON)?$",
+      "^[A-Z]?([a-z0-9]+)([A-Z][a-z0-9]+)*(JSON)?$",
     ],
 
     /*
