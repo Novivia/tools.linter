@@ -60,20 +60,21 @@
     "no-nested-ternary": "error",
     "no-spaced-func": "error",
 
-    // Can be improved by https://github.com/eslint/eslint/issues/6488
-    "object-curly-newline": [
-      "error",
-      {
-        "ObjectExpression": {
-          "minProperties": 0,
-          "multiline": true,
-        },
-        "ObjectPattern": {
-          "minProperties": 0,
-          "multiline": true,
-        },
-      },
-    ],
+    // FIXME: Reactivate once https://github.com/eslint/eslint/issues/6488 is
+    // integrated in ESLint.
+    // "object-curly-newline": [
+    //   "error",
+    //   {
+    //     "ObjectExpression": {
+    //       "minProperties": 0,
+    //       "multiline": true,
+    //     },
+    //     "ObjectPattern": {
+    //       "minProperties": 0,
+    //       "multiline": true,
+    //     },
+    //   },
+    // ],
     "babel/object-curly-spacing": [
       "error",
       "never",

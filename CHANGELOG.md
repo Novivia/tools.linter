@@ -192,8 +192,6 @@
     * Now disallowing nested ternary expressions. (`no-nested-ternary`)
     * Now disallowing spacing between function identifiers and their
       applications. (`no-spaced-func`)
-    * Now enforcing consistent line breaks inside braces.
-      (`object-curly-newline`)
     * Now disallowing a space before function parenthesis.
       (`space-before-function-paren`)
 
