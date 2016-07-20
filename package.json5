@@ -20,7 +20,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "build-module build -b 'modifiers/**/*.js' -p 'rules/**' -p cliWrapper",
+    "build": "build-module build -b 'modifiers/**/*.js' -p 'modifiers/**' -p 'rules/**' -p cliWrapper",
     "lint": "babel-node cliWrapper lint .",
     "pub": "build-module publish",
     "release": "build-module release",
