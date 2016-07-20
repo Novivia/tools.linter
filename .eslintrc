@@ -207,7 +207,7 @@
     "security/detect-unsafe-regex": "error",
     "header/header": ["error", "block", ["*", " * Copyright 2013-present, Novivia, Inc.", " * All rights reserved.", " "]],
     "filenames/match-exported": "error",
-    "filenames/match-regex": ["error", "^([a-z0-9]+)([A-Z][a-z0-9]+)*(JSON)?$"],
+    "filenames/match-regex": ["error", "^[A-Z]?([a-z0-9]+)([A-Z][a-z0-9]+)*(JSON)?$"],
     "arrow-body-style": ["error", "as-needed"],
     "arrow-spacing": "error",
     "comma-dangle": ["error", "always-multiline"],
@@ -215,7 +215,7 @@
     "import/default": "error",
     "import/export": "error",
     "import/extensions": "error",
-    "babel/func-params-comma-dangle": "error",
+    "babel/func-params-comma-dangle": ["error", "always-multiline"],
     "babel/generator-star-spacing": ["error", "after"],
     "import/imports-first": "error",
     "import/named": "error",
@@ -298,7 +298,7 @@
     "no-nested-ternary": "error",
     "object-curly-newline": ["error", {
       "ObjectExpression": {
-        "minProperties": 1,
+        "minProperties": 0,
         "multiline": true
       },
       "ObjectPattern": {

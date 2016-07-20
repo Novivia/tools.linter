@@ -59,6 +59,8 @@
     ],
     "no-nested-ternary": "error",
     "no-spaced-func": "error",
+
+    // Can be improved by https://github.com/eslint/eslint/issues/6488
     "object-curly-newline": [
       "error",
       {

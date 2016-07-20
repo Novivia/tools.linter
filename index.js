@@ -27,9 +27,7 @@ module.exports = {
   ],
   defaultConfig: {
     modifiers: {
-      frontend: {
-        react: true,
-      },
+      frontend: {react: true},
       global: {
         es2015: true,
         "no-code-style": false,
