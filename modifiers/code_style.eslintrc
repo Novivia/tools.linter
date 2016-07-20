@@ -63,7 +63,7 @@
       "error",
       {
         "ObjectExpression": {
-          "minProperties": 1,
+          "minProperties": 0,
           "multiline": true,
         },
         "ObjectPattern": {
