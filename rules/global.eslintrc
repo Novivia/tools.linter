@@ -342,7 +342,7 @@
      */
 
     "header/header": [
-      "error",
+      "warn",
       "block",
       [
         "*",
