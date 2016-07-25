@@ -1,6 +1,6 @@
 # Versions
 
-## v1.0.0 - ()
+## v1.0.0 - (25/07/2016)
 
 * Project now maintained under the Novivia scope (@novivia) and renamed to
   "linter". (formerly "eslint-myrules") Options must now be specified
