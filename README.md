@@ -1,4 +1,5 @@
-# eslint-myrules
+# Linting Tool
+
 Plugin for [eslint-myrules-manage](https://github.com/Cellule/eslint-myrules-manager)
 
 ## Configuration
@@ -10,7 +11,7 @@ Plugin for [eslint-myrules-manage](https://github.com/Cellule/eslint-myrules-man
 ## Installation
 
 ```bash
-$ npm install git+ssh://git.novivia.com/auex/tools.rules --save-dev
+$ npm install @novivia/linter --save-dev
 ```
 
 ## Details
@@ -18,4 +19,3 @@ $ npm install git+ssh://git.novivia.com/auex/tools.rules --save-dev
 - Targets: `global` and `frontend`
 - Modifiers: see [modifiers](modifiers/README.md)
 - Uses [babel-eslint](https://github.com/babel/babel-eslint) for parsing.
-- Optional plugin for [react](https://github.com/yannickcr/eslint-plugin-react)
