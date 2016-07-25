@@ -227,6 +227,7 @@
     * `no-negated-condition`
 
 * New dependencies:
+    * `@novivia/open-sourcer`
     * `babel-cli`.
     * `babel-plugin-syntax-trailing-function-commas`.
     * `babel-plugin-transform-es2015-destructuring`.
@@ -248,6 +249,7 @@
     * `eslint-plugin-you-dont-need-lodash-underscore`.
 
 * Updated dependencies:
+    * `@novivia/build-module` to v0.3.
     * `babel-eslint` to v6.
     * `eslint` to v3.
     * `eslint-plugin-flow-vars` to v0.4.

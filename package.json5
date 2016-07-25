@@ -33,8 +33,9 @@
     },
   },
   "devDependencies": {
-    // AuctionEx dependencies.
-    "@auex/build-module": "^0.2.6",
+    // Novivia dependencies.
+    "@novivia/build-module": "^0.3.0",
+    "@novivia/open-sourcer": "^0.1.0",
 
     // npm dependencies.
     "babel-cli": "^6.10.1",
