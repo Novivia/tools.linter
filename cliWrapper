@@ -1,5 +1,15 @@
 #!/usr/bin/env node
-var execute = require("eslint-myrules-manager").execute;
-var myRules = require("./index");
+
+// For dev only.
+// require("babel-register");
+
+// Overrides.
+const managerConfig = require("eslint-myrules-manager/lib/config");
+
+managerConfig.pkgConfigName = "novivia-linter";
+managerConfig.configFilename = ".novivialinterrc";
+
+const execute = require("eslint-myrules-manager").execute;
+const myRules = require("./");
 
 execute(myRules, process.argv);

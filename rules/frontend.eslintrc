@@ -1,8 +1,9 @@
 {
   "env": {
     "browser": true,
-    "jquery": true
+    "jquery": true,
   },
+  "plugins": ["lean-imports"],
   "globals": {
     "__DEV__": false,
     "__PROD__": false,
@@ -13,6 +14,12 @@
     // Confirmed that UglifyJS drops trailling comma
     //"comma-dangle": [2, "never"]
     // Allow the use of console calls in the frontend (deactivated in the backend)
-    "no-console": 0
+    "no-console": "off",
+    "import/no-unresolved": "off",
+
+    "lean-imports/import": [
+      "error",
+      ["lodash", "react-bootstrap"],
+    ],
   }
 }
