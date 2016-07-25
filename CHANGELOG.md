@@ -203,7 +203,8 @@
     * Now preventing the usage of unsafe `target="_blank"`.
       (`react/jsx-no-target-blank`)
     * Now enforcing the position of the first prop in JSX.
-      (`jsx-first-prop-new-line`)
+      (`react/jsx-first-prop-new-line`)
+    * Now enforcing alphabetical props sorting. (`react/jsx-sort-props`)
     * Now validating spacing before closing bracket in JSX.
       (`react/jsx-space-before-closing`)
     * Now preventing comments from being inserted as text nodes.
@@ -250,7 +251,7 @@
     * `babel-eslint` to v6.
     * `eslint` to v3.
     * `eslint-plugin-flow-vars` to v0.4.
-    * `eslint-plugin-react` to v5.
+    * `eslint-plugin-react` to v6-alpha.2.
 
 
 ## v0.6.3 - (13/01/2016)
