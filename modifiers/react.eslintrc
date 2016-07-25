@@ -15,7 +15,6 @@
   },
   "rules": {
     "react/display-name": "error",
-    "react/no-comment-textnodes": "error",
     "react/no-deprecated": "error",
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": [
@@ -36,10 +35,6 @@
     "react/prefer-stateless-function": "error",
     "react/prop-types": "error",
     "react/react-in-jsx-scope": "error",
-    "react/require-extension": [
-      "error",
-      {"extensions": [".js", ".jsx"]},
-    ],
     "react/require-optimization": "warn",
     "react/require-render-return": "error",
     "react/self-closing-comp": "error",
@@ -93,7 +88,6 @@
         "ignoreCase": true,
       },
     ],
-    "react/wrap-multilines": "error",
 
     /*
      * JSX-centric rules.
@@ -128,12 +122,16 @@
       "error",
       {"ignoreRefs": true},
     ],
-
+    "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-duplicate-props": "error",
     "react/jsx-no-target-blank": "error",
     "react/jsx-no-undef": "error",
     "react/jsx-pascal-case": "error",
-    "jsx-sort-props": [
+    "react/jsx-require-extension": [
+      "error",
+      {"extensions": [".js", ".jsx"]},
+    ],
+    "react/jsx-sort-props": [
       "error",
       {
         "callbacksLast": true,
@@ -144,6 +142,7 @@
     "react/jsx-space-before-closing": "error",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "react/jsx-wrap-multilines": "error",
 
     // Allow nested ternary operators for JSX components.
     "no-nested-ternary": "off",

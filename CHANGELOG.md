@@ -202,13 +202,13 @@
       (`react/jsx-filename-extension`)
     * Now preventing the usage of unsafe `target="_blank"`.
       (`react/jsx-no-target-blank`)
+    * Now preventing comments from being inserted as text nodes.
+      (`react/jsx-no-comment-textnodes`)
     * Now enforcing the position of the first prop in JSX.
       (`react/jsx-first-prop-new-line`)
     * Now enforcing alphabetical props sorting. (`react/jsx-sort-props`)
     * Now validating spacing before closing bracket in JSX.
       (`react/jsx-space-before-closing`)
-    * Now preventing comments from being inserted as text nodes.
-      (`react/no-comment-textnodes`)
     * Now preventing usage of the return value of `React.render`.
       (`react/no-render-return-value`)
     * Now enforcing stateless React components to be written as pure
