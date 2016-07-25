@@ -22,6 +22,7 @@
   "scripts": {
     "build": "build-module build -b 'modifiers/**/*.js' -p 'modifiers/**' -p 'rules/**' -p cliWrapper",
     "lint": "babel-node cliWrapper lint .",
+    "open-source": "open-source",
     "pub": "build-module publish",
     "release": "build-module release",
   },
