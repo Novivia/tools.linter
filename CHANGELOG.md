@@ -1,6 +1,6 @@
 # Versions
 
-## v1.1.0 - ()
+## v1.1.0 - (29/07/2016)
 
 * New global rule:
     * Now disallowing tab characters in files. (`no-tabs`)
