@@ -1,5 +1,16 @@
 # Versions
 
+## v1.1.0 - ()
+
+* New global rule:
+    * Now disallowing tab characters in files. (`no-tabs`)
+
+* Updated rules:
+    * Now requiring no spacing for `MemberExpression` in the `indent` rule.
+
+* Updated `eslint-plugin-react` dependency to v6-rc.0.
+
+
 ## v1.0.0 - (25/07/2016)
 
 * Project now maintained under the Novivia scope (@novivia) and renamed to

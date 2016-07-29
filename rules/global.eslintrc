@@ -62,6 +62,7 @@
       "error",
       2,
       {
+        "MemberExpression": 0,
         "SwitchCase": 1,
         "VariableDeclarator": 2,
       },
@@ -92,6 +93,7 @@
     ],
     "no-multi-str": "error",
     "no-spaced-func": "error",
+    "no-tabs": "error",
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
     "no-unneeded-ternary": "error",
