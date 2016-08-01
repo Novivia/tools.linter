@@ -1,6 +1,6 @@
 # Versions
 
-## v1.1.1 - ()
+## v1.1.1 - (01/08/2016)
 
 * Addressed an issue where non-ES2015 code would not have the proper
   configuration for the `no-magic-numbers` rule.
@@ -8,6 +8,7 @@
   the `extensions` import rule.
 
 * Updated `eslint-plugin-react` dependency to v6-rc.1.
+
 
 ## v1.1.0 - (29/07/2016)
 
