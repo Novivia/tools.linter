@@ -4,6 +4,8 @@
 
 * Addressed an issue where non-ES2015 code would not have the proper
   configuration for the `no-magic-numbers` rule.
+* Removed the `jsx-require-extension` React rule since it was redundant with
+  the `extensions` import rule.
 
 * Updated `eslint-plugin-react` dependency to v6-rc.1.
 
