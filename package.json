@@ -1,7 +1,7 @@
 {
   "name": "@novivia/linter",
   "role": "linter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "ESlint rules for Novivia",
   "authors": [
     "Michaël Ferris <mike.ferrisb@gmail.com>",
@@ -55,7 +55,7 @@
     "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-node": "^2.0.0",
     "eslint-plugin-promise": "^2.0.0",
-    "eslint-plugin-react": "6.0.0-rc.0",
+    "eslint-plugin-react": "6.0.0-rc.1",
     "eslint-plugin-security": "^1.2.0",
     "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.0"
   }

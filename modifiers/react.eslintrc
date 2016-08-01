@@ -124,10 +124,6 @@
     "react/jsx-no-target-blank": "error",
     "react/jsx-no-undef": "error",
     "react/jsx-pascal-case": "error",
-    "react/jsx-require-extension": [
-      "error",
-      {"extensions": [".js", ".jsx"]},
-    ],
     "react/jsx-sort-props": [
       "error",
       {
