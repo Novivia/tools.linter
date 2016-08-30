@@ -1,5 +1,51 @@
 # Versions
 
+## v1.2.0 - ()
+
+* New global rules:
+    * Now disallowing negating the left operand of relational operators.
+      (`no-unsafe-negation`)
+    * Now enforcing comparing `typeof` expressions against valid strings.
+      (`valid-typeof`)
+
+* New frontend rule:
+    * Now forbidding the use of Node.js builtin modules, except `path`.
+      (`import/no-nodejs-modules`)
+
+* New ES2015+ rules:
+    * Now enforcing that class methods utilize `this`.
+      (`class-methods-use-this`)
+    * Now disallowing template literal placeholder syntax in regular strings.
+      (`no-template-curly-in-string`)
+    * Added new Flow-related rules, applied only to files with the `@flow`
+      annotation, so it doesn't become intrusive:
+          * Now enforcing consistent spacing before the opening of generic type
+            annotation parameters. (`flowtype/space-before-generic-bracket`)
+          * Now enforcing consistent spacing around union and intersection type
+            separators. (`flowtype/union-intersection-spacing`)
+
+* New style rule:
+    * Now requiring object keys to be sorted. (`sort-keys`)
+
+* New React rules:
+    * Now attempting to prevent problems with children and
+      `dangerouslySetInnerHTML`. (`react/no-danger-with-children`)
+    * Now preventing definitions of unused prop types.
+      (`react/no-unused-prop-types`)
+    * Now enforcing the value of the style prop to be an object.
+      (`react/style-prop-object`)
+    * New accessibility rules:
+        * Now enforcing all anchors to contain accessible content.
+          (`jsx-a11y/anchor-has-content`)
+        * Now enforcing a clickable non-interactive element has at least one
+          keyboard event listener. (`jsx-a11y/click-events-have-key-events`)
+        * Now enforcing that non-interactive elements have no interactive
+          handlers. (`jsx-a11y/no-static-element-interactions`)
+
+* Removed `eslint-plugin-flow-vars` dependency.
+* Updated `eslint-plugin-react` dependency to v6.
+
+
 ## v1.1.1 - (01/08/2016)
 
 * Addressed an issue where non-ES2015 code would not have the proper

@@ -7,7 +7,7 @@
     "es6": true
   },
   "globals": {},
-  "plugins": ["filenames", "header", "lodash", "markdown", "new-with-error", "node", "security", "babel", "flow-vars", "flowtype", "import", "promise", "you-dont-need-lodash-underscore"],
+  "plugins": ["filenames", "header", "lodash", "markdown", "new-with-error", "node", "security", "babel", "flowtype", "import", "promise", "you-dont-need-lodash-underscore"],
   "rules": {
     "camelcase": ["error", {
       "properties": "never"
@@ -51,7 +51,6 @@
       }
     }],
     "no-multi-str": "error",
-    "no-spaced-func": "error",
     "no-tabs": "error",
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
@@ -106,6 +105,7 @@
     "no-fallthrough": ["error", {
       "commentPattern": "Fallthrough."
     }],
+    "no-global-assign": "error",
     "no-implied-eval": "error",
     "no-iterator": "error",
     "no-label-var": "error",
@@ -113,7 +113,6 @@
     "no-lonely-if": "error",
     "no-loop-func": "off",
     "no-mixed-operators": "error",
-    "no-native-reassign": "error",
     "no-new": "error",
     "no-new-func": "error",
     "no-new-object": "error",
@@ -122,7 +121,9 @@
     "no-return-assign": "error",
     "no-restricted-globals": ["error", "event"],
     "no-script-url": "error",
-    "no-self-assign": "error",
+    "no-self-assign": ["error", {
+      "props": true
+    }],
     "no-sequences": "error",
     "no-shadow": ["error", {
       "allow": ["callback", "cb", "err", "next", "res", "response", "result", "self"],
@@ -142,6 +143,7 @@
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
     "no-unsafe-finally": "error",
+    "no-unsafe-negation": "error",
     "no-unused-expressions": ["error", {
       "allowShortCircuit": true,
       "allowTernary": true
@@ -158,6 +160,9 @@
         "returns": "return"
       },
       "requireReturn": false
+    }],
+    "valid-typeof": ["error", {
+      "requireStringLiterals": true
     }],
     "wrap-iife": ["error", "outside"],
     "yoda": ["error", "never", {
@@ -212,6 +217,7 @@
     "filenames/match-regex": ["error", "^[A-Z]?([a-z0-9]+)([A-Z][a-z0-9]+)*(JSON)?$"],
     "arrow-body-style": ["error", "as-needed"],
     "arrow-spacing": "error",
+    "class-methods-use-this": "error",
     "comma-dangle": ["error", "always-multiline"],
     "constructor-super": "error",
     "import/default": "error",
@@ -245,6 +251,7 @@
       "ignore": ["build/locales/getLocales$", "js/render/prerenderSimple$"]
     }],
     "no-param-reassign": "error",
+    "no-template-curly-in-string": "error",
     "no-this-before-super": "error",
     "no-useless-concat": "error",
     "no-useless-constructor": "error",
@@ -263,14 +270,16 @@
     "promise/always-return": "error",
     "promise/catch-or-return": "error",
     "promise/param-names": "error",
-    "flow-vars/define-flow-type": "error",
+    "flowtype/define-flow-type": "error",
     "flowtype/require-parameter-type": "error",
     "flowtype/require-return-type": "error",
     "flowtype/require-valid-file-annotation": "error",
     "flowtype/space-after-type-colon": "error",
+    "flowtype/space-before-generic-bracket": "error",
     "flowtype/space-before-type-colon": "error",
     "flowtype/type-id-match": "error",
-    "flow-vars/use-flow-type": "error",
+    "flowtype/union-intersection-spacing": "error",
+    "flowtype/use-flow-type": "error",
     "you-dont-need-lodash-underscore/assign": "error",
     "you-dont-need-lodash-underscore/concat": "error",
     "you-dont-need-lodash-underscore/each": "error",
@@ -295,6 +304,7 @@
     "comma-style": ["error", "last"],
     "computed-property-spacing": ["error", "never"],
     "dot-location": ["error", "property"],
+    "func-call-spacing": "error",
     "lines-around-comment": ["error", {
       "allowArrayStart": true,
       "allowBlockStart": true,
@@ -323,6 +333,10 @@
     }],
     "padded-blocks": ["error", "never"],
     "radix": ["error", "as-needed"],
+    "sort-keys": ["error", "asc", {
+      "caseSensitive": true,
+      "natural": true
+    }],
     "space-before-blocks": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
     "space-in-parens": ["error", "never"],
@@ -331,7 +345,7 @@
     }]
   },
   "parserOptions": {
-    "ecmaVersion": 7,
+    "ecmaVersion": 2016,
     "sourceType": "module"
   },
   "settings": {

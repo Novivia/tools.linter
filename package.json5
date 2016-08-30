@@ -39,37 +39,36 @@
     "@novivia/open-sourcer": "^0.1.0",
 
     // npm dependencies.
-    "babel-cli": "^6.10.1",
-    "babel-plugin-syntax-trailing-function-commas": "^6.8.0",
+    "babel-cli": "^6.14.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
     "babel-plugin-transform-es2015-destructuring": "^6.9.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
-    "babel-plugin-transform-es2015-parameters": "^6.11.3",
-    "babel-register": "^6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
+    "babel-plugin-transform-es2015-parameters": "^6.11.4",
+    "babel-register": "^6.14.0",
   },
   "dependencies": {
     // npm dependencies.
     "babel-eslint": "^6.1.2",
-    "eslint": "^3.2.0",
+    "eslint": "^3.4.0",
     "eslint-myrules-manager": "^0.5.0",
     "eslint-plugin-babel": "^3.3.0",
-    "eslint-plugin-filenames": "^1.0.0",
-    "eslint-plugin-flow-vars": "^0.4.0",
-    "eslint-plugin-flowtype": "^2.3.1",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-flowtype": "^2.11.4",
     "eslint-plugin-header": "^0.1.0",
-    "eslint-plugin-import": "^1.11.0",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
     "eslint-plugin-lean-imports": "^0.3.3",
-    "eslint-plugin-lodash": "^1.9.4",
+    "eslint-plugin-lodash": "^1.10.1",
     "eslint-plugin-markdown": "^1.0.0-beta.2",
     "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-node": "^2.0.0",
-    "eslint-plugin-promise": "^2.0.0",
-    "eslint-plugin-react": "6.0.0-rc.1",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-react": "6.2.0",
     "eslint-plugin-security": "^1.2.0",
 
     // FIXME: Reactivate when there are less false positives and when speed is
     // improved.
     // "eslint-plugin-spellcheck": "0.0.7",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.1",
   }
 }
