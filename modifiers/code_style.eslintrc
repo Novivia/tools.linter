@@ -28,6 +28,7 @@
       "error",
       "property",
     ],
+    "func-call-spacing": "error",
     "lines-around-comment": [
       "error",
       {
@@ -58,7 +59,6 @@
       },
     ],
     "no-nested-ternary": "error",
-    "no-spaced-func": "error",
 
     // FIXME: Reactivate once https://github.com/eslint/eslint/issues/6488 is
     // integrated in ESLint.
@@ -96,6 +96,14 @@
     "radix": [
       "error",
       "as-needed",
+    ],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": true,
+      },
     ],
     "space-before-blocks": [
       "error",

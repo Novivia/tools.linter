@@ -13,8 +13,8 @@ const {
 
 function makeModifier({file, modifier = modifierMerge}) {
   return (apply, rules) => modifier({
-    file,
     apply,
+    file,
     rules,
   });
 }

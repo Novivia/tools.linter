@@ -98,7 +98,6 @@
       },
     ],
     "no-multi-str": "error",
-    "no-spaced-func": "error",
     "no-tabs": "error",
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
@@ -183,6 +182,7 @@
       "error",
       {"commentPattern": "Fallthrough."},
     ],
+    "no-global-assign": "error",
     "no-implied-eval": "error",
     "no-iterator": "error",
     "no-label-var": "error",
@@ -190,7 +190,6 @@
     "no-lonely-if": "error",
     "no-loop-func": "error",
     "no-mixed-operators": "error",
-    "no-native-reassign": "error",
     "no-new": "error",
     "no-new-func": "error",
     "no-new-object": "error",
@@ -202,7 +201,10 @@
       "event",
     ],
     "no-script-url": "error",
-    "no-self-assign": "error",
+    "no-self-assign": [
+      "error",
+      {"props": true},
+    ],
     "no-sequences": "error",
     "no-shadow": [
       "error",
@@ -246,6 +248,7 @@
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
     "no-unsafe-finally": "error",
+    "no-unsafe-negation": "error",
     "no-unused-expressions": [
       "error",
       {
@@ -270,6 +273,10 @@
         "prefer": {"returns": "return"},
         "requireReturn": false,
       },
+    ],
+    "valid-typeof": [
+      "error",
+      {"requireStringLiterals": true},
     ],
     "wrap-iife": [
       "error",
