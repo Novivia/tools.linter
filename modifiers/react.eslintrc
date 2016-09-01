@@ -15,6 +15,7 @@
   },
   "rules": {
     "react/display-name": "error",
+    "react/no-danger-with-children": "error",
     "react/no-deprecated": "error",
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
@@ -28,6 +29,7 @@
     "react/no-render-return-value": "error",
     "react/no-string-refs": "error",
     "react/no-unknown-property": "error",
+    "react/no-unused-prop-types": "error",
     "react/prefer-es6-class": "error",
     "react/prefer-stateless-function": "error",
     "react/prop-types": "error",
@@ -39,6 +41,7 @@
       "error",
       {
         "order": [
+          "type-annotations",
           "static-methods",
           "definition",
           "lifecycle",
@@ -85,6 +88,7 @@
         "ignoreCase": true,
       },
     ],
+    "react/style-prop-object": "error",
 
     /*
      * JSX-centric rules.
@@ -144,10 +148,12 @@
      * Accessibility rules.
      */
 
+    "jsx-a11y/anchor-has-content": "error",
     "jsx-a11y/aria-props": "error",
     "jsx-a11y/aria-proptypes": "error",
     "jsx-a11y/aria-role": "error",
     "jsx-a11y/aria-unsupported-elements": "error",
+    "jsx-a11y/click-events-have-key-events": "error",
     "jsx-a11y/heading-has-content": "error",
     "jsx-a11y/href-no-hash": "error",
     "jsx-a11y/html-has-lang": "error",
@@ -158,6 +164,7 @@
     "jsx-a11y/no-access-key": "error",
     "jsx-a11y/no-marquee": "error",
     "jsx-a11y/no-onchange": "error",
+    "jsx-a11y/no-static-element-interactions": "error",
     "jsx-a11y/onclick-has-focus": "error",
     "jsx-a11y/onclick-has-role": "error",
     "jsx-a11y/role-has-required-aria-props": "error",
