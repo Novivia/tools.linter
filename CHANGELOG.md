@@ -1,6 +1,6 @@
 # Versions
 
-## v1.2.0 - ()
+## v1.2.0 - (01/09/2016)
 
 * New global rules:
     * Now disallowing negating the left operand of relational operators.
