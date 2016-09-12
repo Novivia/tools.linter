@@ -39,6 +39,13 @@
         "beforeLineComment": true,
       },
     ],
+    "lines-around-directive": [
+      "error",
+      {
+        "before": "never",
+        "after": "always",
+      },
+    ],
     "max-len": [
       "error",
       80,
@@ -93,6 +100,7 @@
       "error",
       "never",
     ],
+    "prefer-numeric-literals": "error",
     "radix": [
       "error",
       "as-needed",

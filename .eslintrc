@@ -27,7 +27,15 @@
     "indent": ["error", 2, {
       "MemberExpression": 0,
       "SwitchCase": 1,
-      "VariableDeclarator": 2
+      "VariableDeclarator": 2,
+      "FunctionDeclaration": {
+        "body": 1,
+        "parameters": 1
+      },
+      "FunctionExpression": {
+        "body": 1,
+        "parameters": 1
+      }
     }],
     "key-spacing": "error",
     "keyword-spacing": "error",
@@ -270,10 +278,13 @@
     "promise/always-return": "error",
     "promise/catch-or-return": "error",
     "promise/param-names": "error",
+    "flowtype/boolean-style": "error",
     "flowtype/define-flow-type": "error",
+    "flowtype/delimiter-dangle": ["error", "always-multiline"],
     "flowtype/require-parameter-type": "error",
     "flowtype/require-return-type": "error",
     "flowtype/require-valid-file-annotation": "error",
+    "flowtype/semi": "error",
     "flowtype/space-after-type-colon": "error",
     "flowtype/space-before-generic-bracket": "error",
     "flowtype/space-before-type-colon": "error",
@@ -312,6 +323,10 @@
       "beforeBlockComment": true,
       "beforeLineComment": true
     }],
+    "lines-around-directive": ["error", {
+      "before": "never",
+      "after": "always"
+    }],
     "max-len": ["error", 80, 2, {
       "ignoreUrls": true
     }],
@@ -332,6 +347,7 @@
       }
     }],
     "padded-blocks": ["error", "never"],
+    "prefer-numeric-literals": "error",
     "radix": ["error", "as-needed"],
     "sort-keys": ["error", "asc", {
       "caseSensitive": true,

@@ -1,5 +1,28 @@
 # Versions
 
+## v1.3.0 - (12/09/2016)
+
+* Updated global rule:
+    * Now enforcing indentation levels in function declarations and function
+      expressions. (`indent`)
+
+* New ES2015+ rules:
+    * Added new Flow-related rules, applied only to files with the `@flow`
+      annotation, so it doesn't become intrusive:
+          * Now enforcing the use of "boolean" for boolean type annotations.
+            (`flowtype/boolean-style`)
+          * Now enforcing consistent use of trailing commas in Object and Tuple
+            annotations. (`flowtype/delimiter-dangle`)
+          * Now enforcing consistent use of semicolons after type aliases.
+            (`flowtype/semi`)
+
+* New style rules:
+    * Now disallowing newlines before directives and requiring them after
+      directives. (`lines-around-directive`)
+    * Now disallowing `parseInt()` in favor of binary, octal, and hexadecimal
+      literals. (`prefer-numeric-literals`)
+
+
 ## v1.2.0 - (01/09/2016)
 
 * New global rules:
@@ -35,12 +58,12 @@
     * Now enforcing the value of the style prop to be an object.
       (`react/style-prop-object`)
     * New accessibility rules:
-        * Now enforcing all anchors to contain accessible content.
-          (`jsx-a11y/anchor-has-content`)
-        * Now enforcing a clickable non-interactive element has at least one
-          keyboard event listener. (`jsx-a11y/click-events-have-key-events`)
-        * Now enforcing that non-interactive elements have no interactive
-          handlers. (`jsx-a11y/no-static-element-interactions`)
+          * Now enforcing all anchors to contain accessible content.
+            (`jsx-a11y/anchor-has-content`)
+          * Now enforcing a clickable non-interactive element has at least one
+            keyboard event listener. (`jsx-a11y/click-events-have-key-events`)
+          * Now enforcing that non-interactive elements have no interactive
+            handlers. (`jsx-a11y/no-static-element-interactions`)
 
 * Removed `eslint-plugin-flow-vars` dependency.
 * Updated `eslint-plugin-react` dependency to v6.
