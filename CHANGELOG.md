@@ -1,5 +1,11 @@
 # Versions
 
+## v1.3.1 - ()
+
+* Addressed an issue where the "frontend" configuration would not properly
+  include the "import" plugin.
+
+
 ## v1.3.0 - (12/09/2016)
 
 * Updated global rule:

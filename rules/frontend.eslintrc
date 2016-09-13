@@ -3,7 +3,10 @@
     "browser": true,
     "jquery": true,
   },
-  "plugins": ["lean-imports"],
+  "plugins": [
+    "import",
+    "lean-imports",
+  ],
   "globals": {
     "__DEV__": false,
     "__PROD__": false,
