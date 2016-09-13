@@ -115,10 +115,16 @@
     "promise/param-names": "error",
 
     // Flow.
+    "flowtype/boolean-style": "error",
     "flowtype/define-flow-type": "error",
+    "flowtype/delimiter-dangle": [
+      "error",
+      "always-multiline",
+    ],
     "flowtype/require-parameter-type": "error",
     "flowtype/require-return-type": "error",
     "flowtype/require-valid-file-annotation": "error",
+    "flowtype/semi": "error",
     "flowtype/space-after-type-colon": "error",
     "flowtype/space-before-generic-bracket": "error",
     "flowtype/space-before-type-colon": "error",
