@@ -1,7 +1,7 @@
 {
   "name": "@novivia/linter",
   "role": "linter",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "publishConfig": {
     "registry": "https://npm.novivia.com"
   },
