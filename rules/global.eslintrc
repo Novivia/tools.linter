@@ -134,6 +134,13 @@
 
     "array-callback-return": "error",
     "callback-return": "error",
+    "node/exports-style": [
+      "error",
+      "module.exports",
+      {
+        "allowBatchAssign": true,
+      },
+    ],
     "eqeqeq": "error",
     "func-style": [
       "error",
