@@ -78,6 +78,9 @@
     "space-unary-ops": "error",
     "array-callback-return": "error",
     "callback-return": "error",
+    "node/exports-style": ["error", "module.exports", {
+      "allowBatchAssign": true
+    }],
     "eqeqeq": "error",
     "func-style": ["error", "declaration", {
       "allowArrowFunctions": true
@@ -230,13 +233,17 @@
     "constructor-super": "error",
     "import/default": "error",
     "import/export": "error",
-    "import/extensions": "error",
+    "import/extensions": ["error", "never"],
+    "import/first": "error",
     "babel/func-params-comma-dangle": ["error", "always-multiline"],
     "babel/generator-star-spacing": ["error", "after"],
-    "import/imports-first": "error",
+    "import/max-dependencies": ["error", {
+      "max": 30
+    }],
     "import/named": "error",
     "babel/new-cap": "error",
     "import/newline-after-import": "error",
+    "import/no-absolute-path": "error",
     "babel/no-await-in-loop": "error",
     "no-class-assign": "error",
     "no-confusing-arrow": ["error", {
@@ -264,6 +271,7 @@
     "no-useless-concat": "error",
     "no-useless-constructor": "error",
     "no-var": "error",
+    "import/no-webpack-loader-syntax": "error",
     "object-shorthand": "error",
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
@@ -281,10 +289,15 @@
     "flowtype/boolean-style": "error",
     "flowtype/define-flow-type": "error",
     "flowtype/delimiter-dangle": ["error", "always-multiline"],
+    "flowtype/no-dupe-keys": "error",
     "flowtype/require-parameter-type": "error",
     "flowtype/require-return-type": "error",
     "flowtype/require-valid-file-annotation": "error",
     "flowtype/semi": "error",
+    "flowtype/sort-keys": ["error", "asc", {
+      "caseSensitive": true,
+      "natural": true
+    }],
     "flowtype/space-after-type-colon": "error",
     "flowtype/space-before-generic-bracket": "error",
     "flowtype/space-before-type-colon": "error",
@@ -361,7 +374,7 @@
     }]
   },
   "parserOptions": {
-    "ecmaVersion": 2016,
+    "ecmaVersion": 2017,
     "sourceType": "module"
   },
   "settings": {

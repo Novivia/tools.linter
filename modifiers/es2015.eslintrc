@@ -3,7 +3,7 @@
     "es6": true,
   },
   "parserOptions": {
-    "ecmaVersion": 2016,
+    "ecmaVersion": 2017,
     "sourceType": "module",
   },
   "settings": {
@@ -33,7 +33,11 @@
     "constructor-super": "error",
     "import/default": "error",
     "import/export": "error",
-    "import/extensions": "error",
+    "import/extensions": [
+      "error",
+      "never",
+    ],
+    "import/first": "error",
     "babel/func-params-comma-dangle": [
       "error",
       "always-multiline",
@@ -42,11 +46,17 @@
       "error",
       "after",
     ],
-    "import/imports-first": "error",
+    "import/max-dependencies": [
+      "error",
+      {
+        "max": 30,
+      },
+    ],
     "import/named": "error",
     "new-cap": "off",
     "babel/new-cap": "error",
     "import/newline-after-import": "error",
+    "import/no-absolute-path": "error",
     "babel/no-await-in-loop": "error",
     "no-class-assign": "error",
     "no-confusing-arrow": [
@@ -91,6 +101,7 @@
     "no-useless-concat": "error",
     "no-useless-constructor": "error",
     "no-var": "error",
+    "import/no-webpack-loader-syntax": "error",
     "object-shorthand": "error",
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
@@ -121,10 +132,19 @@
       "error",
       "always-multiline",
     ],
+    "flowtype/no-dupe-keys": "error",
     "flowtype/require-parameter-type": "error",
     "flowtype/require-return-type": "error",
     "flowtype/require-valid-file-annotation": "error",
     "flowtype/semi": "error",
+    "flowtype/sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": true,
+      },
+    ],
     "flowtype/space-after-type-colon": "error",
     "flowtype/space-before-generic-bracket": "error",
     "flowtype/space-before-type-colon": "error",
