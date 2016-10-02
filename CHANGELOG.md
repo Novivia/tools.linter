@@ -1,9 +1,41 @@
 # Versions
 
-## v1.3.1 - ()
+## v1.4.0 - (29/09/2016)
+
+* New global rule:
+    * Now enforcing `module.exports =` over `exports =`. (`node/exports-style`)
+
+* New frontend rule:
+    * Now forbidding require() calls with expressions.
+      (`import/no-dynamic-require`)
+
+* New ES2015+ rules:
+    * Now forbidding modules to have too many dependencies, maximum set at 30
+      for now. (`import/max-dependencies`)
+    * Now forbidding import of modules using absolute paths.
+      (`import/no-absolute-path`)
+    * Now forbidding Webpack loader syntax in imports, save for frontend.
+      (`import/no-webpack-loader-syntax`)
+    * Added new Flow-related rules, applied only to files with the `@flow`
+      annotation, so it doesn't become intrusive:
+        * Now checking for duplicate properties in object annotations.
+          (`flowtype/no-dupe-keys`)
+        * Now enforcing the sorting of object annotations.
+          (`flowtype/sort-keys`)
+
+* New React rules:
+    * Added React-related exceptions to the `class-methods-use-this` rule.
+    * Now preventing the passing of children as props.
+      (`react/no-children-prop`)
+    * Now preventing invalid characters from appearing in markup.
+      (`react/no-unescaped-entities`)
 
 * Addressed an issue where the "frontend" configuration would not properly
   include the "import" plugin.
+
+* Updated dependencies:
+    * `babel-eslint` to v7.
+    * `eslint-plugin-import` to v2.
 
 
 ## v1.3.0 - (12/09/2016)
@@ -15,12 +47,12 @@
 * New ES2015+ rules:
     * Added new Flow-related rules, applied only to files with the `@flow`
       annotation, so it doesn't become intrusive:
-          * Now enforcing the use of "boolean" for boolean type annotations.
-            (`flowtype/boolean-style`)
-          * Now enforcing consistent use of trailing commas in Object and Tuple
-            annotations. (`flowtype/delimiter-dangle`)
-          * Now enforcing consistent use of semicolons after type aliases.
-            (`flowtype/semi`)
+        * Now enforcing the use of "boolean" for boolean type annotations.
+          (`flowtype/boolean-style`)
+        * Now enforcing consistent use of trailing commas in Object and Tuple
+          annotations. (`flowtype/delimiter-dangle`)
+        * Now enforcing consistent use of semicolons after type aliases.
+          (`flowtype/semi`)
 
 * New style rules:
     * Now disallowing newlines before directives and requiring them after
@@ -48,10 +80,10 @@
       (`no-template-curly-in-string`)
     * Added new Flow-related rules, applied only to files with the `@flow`
       annotation, so it doesn't become intrusive:
-          * Now enforcing consistent spacing before the opening of generic type
-            annotation parameters. (`flowtype/space-before-generic-bracket`)
-          * Now enforcing consistent spacing around union and intersection type
-            separators. (`flowtype/union-intersection-spacing`)
+        * Now enforcing consistent spacing before the opening of generic type
+          annotation parameters. (`flowtype/space-before-generic-bracket`)
+        * Now enforcing consistent spacing around union and intersection type
+          separators. (`flowtype/union-intersection-spacing`)
 
 * New style rule:
     * Now requiring object keys to be sorted. (`sort-keys`)
@@ -64,12 +96,12 @@
     * Now enforcing the value of the style prop to be an object.
       (`react/style-prop-object`)
     * New accessibility rules:
-          * Now enforcing all anchors to contain accessible content.
-            (`jsx-a11y/anchor-has-content`)
-          * Now enforcing a clickable non-interactive element has at least one
-            keyboard event listener. (`jsx-a11y/click-events-have-key-events`)
-          * Now enforcing that non-interactive elements have no interactive
-            handlers. (`jsx-a11y/no-static-element-interactions`)
+        * Now enforcing all anchors to contain accessible content.
+          (`jsx-a11y/anchor-has-content`)
+        * Now enforcing a clickable non-interactive element has at least one
+          keyboard event listener. (`jsx-a11y/click-events-have-key-events`)
+        * Now enforcing that non-interactive elements have no interactive
+          handlers. (`jsx-a11y/no-static-element-interactions`)
 
 * Removed `eslint-plugin-flow-vars` dependency.
 * Updated `eslint-plugin-react` dependency to v6.
