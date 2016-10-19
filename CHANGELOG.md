@@ -1,5 +1,16 @@
 # Versions
 
+## v1.5.0 - (17/10/2016)
+
+* New global rule:
+    * Now enforcing function names to match the name of the variable or property
+      to which they are assigned. (`func-name-matching`)
+
+* Updated dependencies:
+    * `eslint-plugin-lodash` to v2.
+    * `eslint-plugin-promise` to v3.
+
+
 ## v1.4.0 - (29/09/2016)
 
 * New global rule:
