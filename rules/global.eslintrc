@@ -142,6 +142,7 @@
       },
     ],
     "eqeqeq": "error",
+    "func-name-matching": "error",
     "func-style": [
       "error",
       "declaration",
@@ -296,6 +297,7 @@
     "wrap-iife": [
       "error",
       "outside",
+      {"functionPrototypeMethods": true},
     ],
     "yoda": [
       "error",
@@ -309,6 +311,11 @@
 
     "lodash/callback-binding": "error",
     "lodash/chain-style": "error",
+    "lodash/chaining": [
+      "error",
+      "always",
+      2,
+    ],
     "lodash/collection-method-value": "error",
     "lodash/collection-return": "error",
     "lodash/consistent-compose": "error",
@@ -318,9 +325,7 @@
     "lodash/no-commit": "error",
     "lodash/no-double-unwrap": "error",
     "lodash/no-extra-args": "error",
-    "lodash/no-single-chain": "error",
     "lodash/path-style": "error",
-    "lodash/prefer-chain": "error",
     "lodash/prefer-compact": "error",
     "lodash/prefer-filter": "error",
     "lodash/prefer-flat-map": "error",

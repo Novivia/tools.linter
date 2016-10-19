@@ -27,7 +27,13 @@
     "class-methods-use-this": "error",
     "comma-dangle": [
       "error",
-      "always-multiline",
+      {
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline",
+        "imports": "always-multiline",
+        "objects": "always-multiline",
+      },
     ],
     "consistent-this": "off",
     "constructor-super": "error",
@@ -38,10 +44,6 @@
       "never",
     ],
     "import/first": "error",
-    "babel/func-params-comma-dangle": [
-      "error",
-      "always-multiline",
-    ],
     "babel/generator-star-spacing": [
       "error",
       "after",
@@ -135,7 +137,13 @@
     "flowtype/no-dupe-keys": "error",
     "flowtype/require-parameter-type": "error",
     "flowtype/require-return-type": "error",
-    "flowtype/require-valid-file-annotation": "error",
+    "flowtype/require-valid-file-annotation": [
+      "error",
+      "never",
+      {
+        "annotationStyle": "block",
+      },
+    ],
     "flowtype/semi": "error",
     "flowtype/sort-keys": [
       "error",
