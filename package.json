@@ -2,52 +2,43 @@
   "name": "@novivia/linter",
   "role": "linter",
   "version": "1.5.0",
-  "publishConfig": {
-    "registry": "https://npm.novivia.com"
-  },
   "description": "ESlint rules for Novivia",
   "authors": [
     "Michaël Ferris <mike.ferrisb@gmail.com>",
-    "Mathieu M-Gosselin <mathieumg@novivia.com>",
+    "Mathieu M-Gosselin <mathieumg@novivia.com>"
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@git.novivia.com/nov/tools.linter.git"
+    "url": "git@github.com:Novivia/tools.linter.git"
   },
   "bin": {
-    "novivia-linter": "./cliWrapper",
+    "novivia-linter": "./cliWrapper"
   },
   "main": "index.js",
   "scripts": {
     "build": "build-module build -b 'modifiers/**/*.js' -p 'modifiers/**' -p 'rules/**' -p cliWrapper",
     "lint": "babel-node cliWrapper lint .",
-    "open-source": "open-source",
     "pub": "build-module publish",
-    "release": "build-module release",
+    "release": "build-module release"
   },
   "novivia-linter": {
     "modifiers": {
       "global": {
-        "react": false,
-      },
-    },
+        "react": false
+      }
+    }
   },
   "devDependencies": {
-    // Novivia dependencies.
     "@novivia/build-module": "^0.3.1",
-    "@novivia/open-sourcer": "^0.1.0",
-
-    // npm dependencies.
     "babel-cli": "^6.16.0",
     "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
     "babel-plugin-transform-es2015-destructuring": "^6.16.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.16.0",
     "babel-plugin-transform-es2015-parameters": "^6.17.0",
-    "babel-register": "^6.16.3",
+    "babel-register": "^6.16.3"
   },
   "dependencies": {
-    // npm dependencies.
     "babel-eslint": "^7.0.0",
     "eslint": "^3.8.1",
     "eslint-myrules-manager": "^0.5.0",
@@ -65,10 +56,6 @@
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-react": "6.4.1",
     "eslint-plugin-security": "^1.2.0",
-
-    // FIXME: Reactivate when there are less false positives and when speed is
-    // improved.
-    // "eslint-plugin-spellcheck": "0.0.7",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.2",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.2"
   }
 }
