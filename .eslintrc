@@ -139,8 +139,7 @@
     }],
     "no-sequences": "error",
     "no-shadow": ["error", {
-      "allow": ["callback", "cb", "err", "next", "res", "response", "result", "self"],
-      "builtinGlobals": true
+      "allow": ["callback", "cb", "err", "next", "res", "response", "result", "self"]
     }],
     "no-shadow-restricted-names": "error",
     "no-octal-escape": "error",

@@ -236,7 +236,6 @@
           "result",
           "self",
         ],
-        "builtinGlobals": true,
       },
     ],
     "no-shadow-restricted-names": "error",
