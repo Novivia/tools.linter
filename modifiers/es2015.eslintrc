@@ -126,6 +126,7 @@
     "promise/always-return": "error",
     "promise/catch-or-return": "error",
     "promise/param-names": "error",
+    "promise/no-return-wrap": "error",
 
     // Flow.
     "flowtype/boolean-style": "error",
@@ -135,7 +136,13 @@
       "always-multiline",
     ],
     "flowtype/no-dupe-keys": "error",
-    "flowtype/require-parameter-type": "error",
+    "flowtype/object-type-delimiter": "error",
+    "flowtype/require-parameter-type": [
+      "error",
+      {
+        "excludeArrowFunctions": "expressionsOnly",
+      },
+    ],
     "flowtype/require-return-type": "error",
     "flowtype/require-valid-file-annotation": [
       "error",

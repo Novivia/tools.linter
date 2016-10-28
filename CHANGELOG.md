@@ -1,5 +1,20 @@
 # Versions
 
+## v1.6.0 - (27/10/2016)
+
+* Now officially requiring Node 4+ and npm 3+ to work.
+* Now recognizing Jest global variables.
+
+* New ES2015+ rules:
+    * Now ensuring that inside a `then()` or a `catch()` we always `return` or
+      `throw` a raw value instead of wrapping in `Promise.resolve` or
+      `Promise.reject`. (`promise/no-return-wrap`)
+    * Added new Flow-related rule, applied only to files with the `@flow`
+      annotation, so it doesn't become intrusive:
+        * Now enforcing consistent separators between properties in object
+          types. (`flowtype/object-type-delimiter`)
+
+
 ## v1.5.0 - (17/10/2016)
 
 * New global rule:
