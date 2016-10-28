@@ -1,7 +1,7 @@
 {
   "name": "@novivia/linter",
   "role": "linter",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "engines": {
     "node": ">=4",
     "npm": ">=3",
