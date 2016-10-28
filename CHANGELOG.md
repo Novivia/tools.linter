@@ -1,6 +1,6 @@
 # Versions
 
-## v1.6.0 - ()
+## v1.6.0 - (27/10/2016)
 
 * Now officially requiring Node 4+ and npm 3+ to work.
 * Now recognizing Jest global variables.
