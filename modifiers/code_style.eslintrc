@@ -48,9 +48,12 @@
     ],
     "max-len": [
       "error",
-      80,
-      2,
-      {"ignoreUrls": true},
+      {
+        "code": 80,
+        "ignoreRegExpLiterals": true,
+        "ignoreUrls": true,
+        "tabWidth": 2,
+      },
     ],
     "newline-per-chained-call": "error",
     "no-floating-decimal": "error",

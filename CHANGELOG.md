@@ -1,5 +1,33 @@
 # Versions
 
+## v1.7.0 - (04/11/2016)
+
+* Now recognizing Jasmine global variables.
+
+* Removed ES2015+ rule:
+    * `prefer-reflect` was deprecated. See
+      http://eslint.org/blog/2016/10/eslint-v3.9.0-released#deprecated-rules
+
+* New global rule:
+    * Now disallowing redundant return statements. (`no-useless-return`)
+
+* New ES2015+ rule:
+    * Now preventing the use of a default export as a locally named import.
+      (`import/no-named-default`)
+
+* Removed dependencies:
+    * `babel-cli`
+    * `babel-plugin-syntax-trailing-function-commas`
+    * `babel-plugin-transform-es2015-destructuring`
+    * `babel-plugin-transform-es2015-modules-commonjs`
+    * `babel-plugin-transform-es2015-parameters`
+    * `babel-register`
+
+* Updated dependencies:
+    * `@novivia/build-module` to v0.5.
+    * `eslint-plugin-node` to v3.
+
+
 ## v1.6.0 - (27/10/2016)
 
 * Now officially requiring Node 4+ and npm 3+ to work.

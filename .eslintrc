@@ -3,6 +3,7 @@
   "root": true,
   "parser": "babel-eslint",
   "env": {
+    "jasmine": true,
     "jest": true,
     "node": true,
     "es6": true
@@ -26,9 +27,9 @@
       "properties": "never"
     }],
     "indent": ["error", 2, {
-      "MemberExpression": 0,
-      "SwitchCase": 1,
-      "VariableDeclarator": 2,
+      "CallExpression": {
+        "arguments": 1
+      },
       "FunctionDeclaration": {
         "body": 1,
         "parameters": 1
@@ -36,7 +37,10 @@
       "FunctionExpression": {
         "body": 1,
         "parameters": 1
-      }
+      },
+      "MemberExpression": 0,
+      "SwitchCase": 1,
+      "VariableDeclarator": 2
     }],
     "key-spacing": "error",
     "keyword-spacing": "error",
@@ -149,7 +153,7 @@
       "typeof": true
     }],
     "no-underscore-dangle": ["error", {
-      "allow": ["__", "__DEV__", "__PRERENDER__", "__PROD__", "__STAGE__", "__TEST_ENV__", "_id"],
+      "allow": ["__", "__BUILDING__", "__DEV__", "__PRERENDER__", "__PROD__", "__STAGE__", "__TEST_ENV__", "__TESTING__", "_id"],
       "allowAfterThis": true
     }],
     "no-unexpected-multiline": "error",
@@ -164,6 +168,7 @@
       "args": "after-used"
     }],
     "no-use-before-define": ["error", "nofunc"],
+    "no-useless-return": "error",
     "no-with": "error",
     "unicode-bom": "error",
     "valid-jsdoc": ["error", {
@@ -265,8 +270,9 @@
     "no-invalid-this": 1,
     "no-mixed-requires": "error",
     "import/no-mutable-exports": "error",
-    "no-new-symbol": "error",
+    "import/no-named-default": "error",
     "import/no-namespace": "error",
+    "no-new-symbol": "error",
     "import/no-unresolved": ["error", {
       "amd": true,
       "commonjs": true,
@@ -282,7 +288,6 @@
     "object-shorthand": "error",
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
-    "prefer-reflect": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
@@ -353,8 +358,11 @@
       "before": "never",
       "after": "always"
     }],
-    "max-len": ["error", 80, 2, {
-      "ignoreUrls": true
+    "max-len": ["error", {
+      "code": 80,
+      "ignoreRegExpLiterals": true,
+      "ignoreUrls": true,
+      "tabWidth": 2
     }],
     "newline-per-chained-call": "error",
     "no-floating-decimal": "error",
