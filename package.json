@@ -1,7 +1,7 @@
 {
   "name": "@novivia/linter",
   "role": "linter",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "engines": {
     "node": ">=4",
     "npm": ">=3"
@@ -50,22 +50,22 @@
   },
   "dependencies": {
     "babel-eslint": "^7.1.0",
-    "eslint": "^3.9.1",
+    "eslint": "^3.10.1",
     "eslint-myrules-manager": "^0.5.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-flowtype": "^2.25.0",
     "eslint-plugin-header": "^0.1.0",
-    "eslint-plugin-import": "^2.1.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
     "eslint-plugin-lean-imports": "^0.3.3",
-    "eslint-plugin-lodash": "^2.1.7",
+    "eslint-plugin-lodash": "^2.2.0",
     "eslint-plugin-markdown": "^1.0.0-beta.3",
     "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-node": "^3.0.3",
-    "eslint-plugin-promise": "^3.3.1",
-    "eslint-plugin-react": "6.5.0",
+    "eslint-plugin-promise": "^3.3.2",
+    "eslint-plugin-react": "6.7.0",
     "eslint-plugin-security": "^1.2.0",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.2"
+    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.4"
   }
 }
