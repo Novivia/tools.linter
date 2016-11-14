@@ -1,5 +1,17 @@
 # Versions
 
+## v1.8.0 - (14/11/2016)
+
+* New ES2015+ rule:
+    * Now disallowing unnecessary `return await`. (`no-return-await`)
+
+* New React rule:
+    * Now validating whitespace in and around the JSX opening and closing
+      brackets. (`react/jsx-tag-spacing`)
+
+* Updated `eslint-plugin-jsx-a11y` dependency to v3.
+
+
 ## v1.7.0 - (04/11/2016)
 
 * Now recognizing Jasmine global variables.
