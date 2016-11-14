@@ -279,6 +279,7 @@
       "ignore": ["build/locales/getLocales$", "js/render/prerenderSimple$"]
     }],
     "no-param-reassign": "error",
+    "no-return-await": "error",
     "no-template-curly-in-string": "error",
     "no-this-before-super": "error",
     "no-useless-concat": "error",
@@ -328,7 +329,7 @@
     "you-dont-need-lodash-underscore/fill": "error",
     "you-dont-need-lodash-underscore/find-index": "error",
     "you-dont-need-lodash-underscore/index-of": "error",
-    "you-dont-need-lodash-underscore/is-na-n": "error",
+    "you-dont-need-lodash-underscore/is-nan": "error",
     "you-dont-need-lodash-underscore/join": "error",
     "you-dont-need-lodash-underscore/keys": "error",
     "you-dont-need-lodash-underscore/last-index-of": "error",
