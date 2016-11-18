@@ -4,58 +4,51 @@
   "version": "1.8.1",
   "engines": {
     "node": ">=4",
-    "npm": ">=3",
-  },
-  "publishConfig": {
-    "registry": "https://npm.novivia.com"
+    "npm": ">=3"
   },
   "description": "ESlint rules for Novivia",
   "authors": [
     "Mathieu M-Gosselin <mathieumg@novivia.com>",
-    "Michaël Ferris <mike.ferrisb@gmail.com>",
+    "Michaël Ferris <mike.ferrisb@gmail.com>"
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@git.novivia.com/nov/tools.linter.git"
+    "url": "git@github.com:Novivia/tools.linter.git"
   },
   "bin": {
-    "novivia-linter": "./cliWrapper",
+    "novivia-linter": "./cliWrapper"
   },
   "main": "index.js",
   "scripts": {
     "build": "novivia-builder build",
     "lint": "./cliWrapper lint .",
-    "open-source": "open-source",
     "pub": "novivia-builder publish",
-    "release": "novivia-builder release",
+    "release": "novivia-builder release"
   },
   "novivia-builder": {
     "babelPatterns": [
       "cli.js",
-      "modifiers/**/*.js",
+      "modifiers/**/*.js"
     ],
     "packagePatterns": [
       "cliWrapper",
       "modifiers/**",
-      "rules/**",
-    ],
+      "rules/**"
+    ]
   },
   "novivia-linter": {
     "modifiers": {
       "global": {
-        "react": false,
-      },
-    },
+        "react": false
+      }
+    }
   },
   "devDependencies": {
-    // Novivia dependencies.
     "@novivia/babel": "0.0.4",
-    "@novivia/build-module": "^0.5.1",
-    "@novivia/open-sourcer": "^0.1.1",
+    "@novivia/build-module": "^0.5.1"
   },
   "dependencies": {
-    // npm dependencies.
     "babel-eslint": "^7.1.1",
     "eslint": "^3.10.2",
     "eslint-myrules-manager": "^0.5.0",
@@ -73,10 +66,6 @@
     "eslint-plugin-promise": "^3.3.2",
     "eslint-plugin-react": "^6.7.1",
     "eslint-plugin-security": "^1.2.0",
-
-    // FIXME: Reactivate when there are less false positives and when speed is
-    // improved.
-    // "eslint-plugin-spellcheck": "0.0.7",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.4",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.4"
   }
 }
