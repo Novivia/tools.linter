@@ -44,10 +44,7 @@
       "never",
     ],
     "import/first": "error",
-    "babel/generator-star-spacing": [
-      "error",
-      "after",
-    ],
+    "generator-star-spacing": "error",
     "import/max-dependencies": [
       "error",
       {
@@ -71,7 +68,7 @@
     "no-dupe-class-members": "error",
     "no-duplicate-imports": "error",
     "no-empty-pattern": "error",
-    "no-invalid-this": 1,
+    "babel/no-invalid-this": "error",
     "no-loop-func": "off",
     "no-magic-numbers": [
       "warn",
