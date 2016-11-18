@@ -1,5 +1,10 @@
 # Versions
 
+## v1.8.1 - (18/11/2016)
+
+* Updated `eslint-plugin-babel` dependency to v4.
+
+
 ## v1.8.0 - (14/11/2016)
 
 * New ES2015+ rule:
