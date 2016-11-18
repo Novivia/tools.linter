@@ -56,10 +56,10 @@
   },
   "dependencies": {
     // npm dependencies.
-    "babel-eslint": "^7.1.0",
-    "eslint": "^3.10.1",
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.10.2",
     "eslint-myrules-manager": "^0.5.0",
-    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-flowtype": "^2.25.0",
     "eslint-plugin-header": "^0.1.0",
@@ -69,9 +69,9 @@
     "eslint-plugin-lodash": "^2.2.0",
     "eslint-plugin-markdown": "^1.0.0-beta.3",
     "eslint-plugin-new-with-error": "^1.1.0",
-    "eslint-plugin-node": "^3.0.3",
+    "eslint-plugin-node": "^3.0.4",
     "eslint-plugin-promise": "^3.3.2",
-    "eslint-plugin-react": "6.7.0",
+    "eslint-plugin-react": "^6.7.1",
     "eslint-plugin-security": "^1.2.0",
 
     // FIXME: Reactivate when there are less false positives and when speed is

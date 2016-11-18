@@ -248,7 +248,7 @@
     "import/export": "error",
     "import/extensions": ["error", "never"],
     "import/first": "error",
-    "babel/generator-star-spacing": ["error", "after"],
+    "generator-star-spacing": "error",
     "import/max-dependencies": ["error", {
       "max": 30
     }],
@@ -267,7 +267,7 @@
     "no-dupe-class-members": "error",
     "no-duplicate-imports": "error",
     "no-empty-pattern": "error",
-    "no-invalid-this": 1,
+    "babel/no-invalid-this": "error",
     "no-mixed-requires": "error",
     "import/no-mutable-exports": "error",
     "import/no-named-default": "error",
