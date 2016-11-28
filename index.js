@@ -12,6 +12,9 @@ import {
 
 module.exports = {
   defaultConfig: {
+    cliConfig: {
+      ignorePattern: "coverage",
+    },
     modifiers: {
       frontend: {react: true},
       global: {

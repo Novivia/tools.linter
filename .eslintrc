@@ -292,6 +292,7 @@
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
+    "require-await": "error",
     "require-yield": "error",
     "strict": ["error", "never"],
     "template-curly-spacing": "error",
@@ -304,6 +305,7 @@
     "flowtype/define-flow-type": "error",
     "flowtype/delimiter-dangle": ["error", "always-multiline"],
     "flowtype/no-dupe-keys": "error",
+    "flowtype/no-primitive-constructor-types": "error",
     "flowtype/object-type-delimiter": "error",
     "flowtype/require-parameter-type": ["error", {
       "excludeArrowFunctions": "expressionsOnly"
@@ -343,6 +345,9 @@
     "block-spacing": ["error", "never"],
     "brace-style": ["error", "1tbs", {
       "allowSingleLine": true
+    }],
+    "capitalized-comments": ["error", "always", {
+      "ignoreConsecutiveComments": true
     }],
     "comma-style": ["error", "last"],
     "computed-property-spacing": ["error", "never"],

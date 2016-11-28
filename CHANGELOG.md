@@ -1,5 +1,26 @@
 # Versions
 
+
+## v1.9.0 - ()
+
+* Now ignoring the "coverage" directory by default.
+
+* New ES2015+ rules:
+    * Now disallowing `async` functions which have no `await` expression.
+      (`require-await`)
+    * Added new Flow-related rule, applied only to files with the `@flow`
+      annotation, so it doesn't become intrusive:
+        * Now disallowing the use of primitive constructors as types, such as
+          `Boolean`, `Number` and `String`.
+          (`flowtype/no-primitive-constructor-types`)
+
+* New style rule:
+    * Now enforcing capitalization of the first letter of a comment.
+      (`capitalized-comments`)
+
+* Updated `@novivia/babel` dependency to v0.0.5.
+
+
 ## v1.8.1 - (18/11/2016)
 
 * Updated `eslint-plugin-babel` dependency to v4.

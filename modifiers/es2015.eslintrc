@@ -109,6 +109,7 @@
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
+    "require-await": "error",
     "require-yield": "error",
 
     // TODO: Implement a version more tailored to our needs.
@@ -134,6 +135,7 @@
       "always-multiline",
     ],
     "flowtype/no-dupe-keys": "error",
+    "flowtype/no-primitive-constructor-types": "error",
     "flowtype/object-type-delimiter": "error",
     "flowtype/require-parameter-type": [
       "error",
