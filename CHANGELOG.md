@@ -1,7 +1,7 @@
 # Versions
 
 
-## v1.9.0 - ()
+## v1.9.0 - (29/11/2016)
 
 * Now ignoring the "coverage" directory by default.
 
