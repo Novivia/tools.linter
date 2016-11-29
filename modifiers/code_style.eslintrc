@@ -16,6 +16,13 @@
       "1tbs",
       {"allowSingleLine": true},
     ],
+    "capitalized-comments": [
+      "error",
+      "always",
+      {
+        "ignoreConsecutiveComments": true,
+      },
+    ],
     "comma-style": [
       "error",
       "last",
