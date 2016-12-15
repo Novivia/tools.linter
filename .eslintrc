@@ -256,7 +256,7 @@
     "babel/new-cap": "error",
     "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
-    "babel/no-await-in-loop": "error",
+    "no-await-in-loop": "error",
     "no-class-assign": "error",
     "no-confusing-arrow": ["error", {
       "allowParens": true
@@ -322,7 +322,7 @@
     "flowtype/space-after-type-colon": "error",
     "flowtype/space-before-generic-bracket": "error",
     "flowtype/space-before-type-colon": "error",
-    "flowtype/type-id-match": "error",
+    "flowtype/type-id-match": ["error", "^([A-Z][a-z0-9]*)+Type?$"],
     "flowtype/union-intersection-spacing": "error",
     "flowtype/use-flow-type": "error",
     "you-dont-need-lodash-underscore/assign": "error",
