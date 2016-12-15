@@ -1,5 +1,17 @@
 # Versions
 
+## v1.10.0 - (15/12/2016)
+
+* Updated ES2015+ rule:
+    * Relaxed required naming pattern for Flow type aliases. The trailing `Type`
+      is now optional. (`flowtype/type-id-match`)
+
+* New React rule:
+    * Now enforcing a defaultProps definition for every prop that is not a
+      required prop. (`react/require-default-props`)
+
+* Updated `@novivia/babel` dependency to v0.1.
+
 
 ## v1.9.0 - (29/11/2016)
 
