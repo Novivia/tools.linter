@@ -120,7 +120,10 @@
     "no-useless-escape": "error",
     "no-useless-rename": "error",
     "no-whitespace-before-property": "error",
-    "object-property-newline": "error",
+    "object-property-newline": [
+      "error",
+      {"allowMultiplePropertiesPerLine": true},
+    ],
     "one-var": [
       "error",
       "never",
@@ -293,8 +296,9 @@
       "error",
       {
         "matchDescription": "^[A-Z](?:.|\\s)*?[.]$",
-        "prefer": {"returns": "return"},
+        "requireParamDescription": false,
         "requireReturn": false,
+        "requireReturnType": false,
       },
     ],
     "valid-typeof": [

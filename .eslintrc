@@ -73,7 +73,9 @@
     "no-useless-escape": "error",
     "no-useless-rename": "error",
     "no-whitespace-before-property": "error",
-    "object-property-newline": "error",
+    "object-property-newline": ["error", {
+      "allowMultiplePropertiesPerLine": true
+    }],
     "one-var": ["error", "never"],
     "quotes": "error",
     "rest-spread-spacing": "error",
@@ -173,10 +175,9 @@
     "unicode-bom": "error",
     "valid-jsdoc": ["error", {
       "matchDescription": "^[A-Z](?:.|\\s)*?[.]$",
-      "prefer": {
-        "returns": "return"
-      },
-      "requireReturn": false
+      "requireParamDescription": false,
+      "requireReturn": false,
+      "requireReturnType": false
     }],
     "valid-typeof": ["error", {
       "requireStringLiterals": true
@@ -308,9 +309,11 @@
     "flowtype/no-primitive-constructor-types": "error",
     "flowtype/object-type-delimiter": "error",
     "flowtype/require-parameter-type": ["error", {
-      "excludeArrowFunctions": "expressionsOnly"
+      "excludeArrowFunctions": true
     }],
-    "flowtype/require-return-type": "error",
+    "flowtype/require-return-type": ["error", {
+      "excludeArrowFunctions": true
+    }],
     "flowtype/require-valid-file-annotation": ["error", "never", {
       "annotationStyle": "block"
     }],
@@ -322,7 +325,7 @@
     "flowtype/space-after-type-colon": "error",
     "flowtype/space-before-generic-bracket": "error",
     "flowtype/space-before-type-colon": "error",
-    "flowtype/type-id-match": ["error", "^([A-Z][a-z0-9]*)+Type?$"],
+    "flowtype/type-id-match": ["error", "^([A-Z][A-Za-z0-9]*)+(?:Type)?$"],
     "flowtype/union-intersection-spacing": "error",
     "flowtype/use-flow-type": "error",
     "you-dont-need-lodash-underscore/assign": "error",

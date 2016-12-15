@@ -60,7 +60,9 @@
     "no-class-assign": "error",
     "no-confusing-arrow": [
       "error",
-      {"allowParens": true},
+      {
+        "allowParens": true,
+      },
     ],
     "no-constant-condition": "error",
     "no-const-assign": "error",
@@ -140,10 +142,15 @@
     "flowtype/require-parameter-type": [
       "error",
       {
-        "excludeArrowFunctions": "expressionsOnly",
+        "excludeArrowFunctions": true,
       },
     ],
-    "flowtype/require-return-type": "error",
+    "flowtype/require-return-type": [
+      "error",
+      {
+        "excludeArrowFunctions": true,
+      },
+    ],
     "flowtype/require-valid-file-annotation": [
       "error",
       "never",
@@ -165,7 +172,7 @@
     "flowtype/space-before-type-colon": "error",
     "flowtype/type-id-match": [
       "error",
-      "^([A-Z][a-z0-9]*)+Type?$",
+      "^([A-Z][A-Za-z0-9]*)+(?:Type)?$",
     ],
     "flowtype/union-intersection-spacing": "error",
     "flowtype/use-flow-type": "error",
