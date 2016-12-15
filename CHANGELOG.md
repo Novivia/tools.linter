@@ -1,5 +1,19 @@
 # Versions
 
+## v1.10.1 - (15/12/2016)
+
+* Updated ES2015+ rules:
+    * No longer necessary to provide typings for arrow functions.
+      (`flowtype/require-parameter-type` and `flowtype/require-return-type`)
+    * Relaxed required naming pattern for Flow type aliases further. Any
+      character can be a capital letter now. (`flowtype/type-id-match`)
+
+* Updated global rules:
+    * No longer enforcing placing object properties on separate lines if the
+      whole object fits on a single line. (`object-property-newline`)
+    * Relaxed required elements for JSDoc validation. (`valid-jsdoc`)
+
+
 ## v1.10.0 - (15/12/2016)
 
 * Updated ES2015+ rule:
